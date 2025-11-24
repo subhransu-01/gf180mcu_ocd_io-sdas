@@ -46,6 +46,18 @@ expand
 writeall force
 EOF
 
+cellname="bi_a"
+magic -dnull -noconsole -rcfile $rcfile << EOF
+gds ordering on
+gds drccheck off
+gds noduplicates true
+gds read ../cells/${cellname}/gf180mcu_ocd_io__${cellname}_5lm.gds
+load gf180mcu_ocd_io__${cellname}
+select top cell
+expand
+writeall force
+EOF
+
 cellname="brk2"
 magic -dnull -noconsole -rcfile $rcfile << EOF
 gds ordering on

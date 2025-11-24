@@ -49,7 +49,7 @@ B 5 -12.5 -72.5 -7.5 -67.5 {name=DVDD dir=inout}
 B 5 -12.5 187.5 -7.5 192.5 {name=DVSS dir=inout}
 B 5 27.5 187.5 32.5 192.5 {name=VSS dir=inout}
 B 5 27.5 -72.5 32.5 -67.5 {name=VDD dir=inout}
-B 5 147.5 -32.5 152.5 -27.5 {name=A dir=inout}
+B 5 147.5 -32.5 152.5 -27.5 {name=A dir=input}
 B 5 147.5 127.5 152.5 132.5 {name=IE dir=inout}
 B 5 147.5 107.5 152.5 112.5 {name=CS dir=input}
 B 5 147.5 67.5 152.5 72.5 {name=PU dir=input}

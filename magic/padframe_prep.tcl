@@ -20,6 +20,7 @@ gds noduplicates true
 gds read ../cells/asig_5p0/gf180mcu_ocd_io__asig_5p0_5lm.gds
 gds read ../cells/bi_24t/gf180mcu_ocd_io__bi_24t_5lm.gds
 gds read ../cells/bi_t/gf180mcu_ocd_io__bi_t_5lm.gds
+gds read ../cells/bi_a/gf180mcu_ocd_io__bi_a_5lm.gds
 gds read ../cells/brk2/gf180mcu_ocd_io__brk2_5lm.gds
 gds read ../cells/brk5/gf180mcu_ocd_io__brk5_5lm.gds
 gds read ../cells/cor/gf180mcu_ocd_io__cor_5lm.gds
@@ -39,7 +40,11 @@ getcell gf180mcu_ocd_io__cor
 box move e 400um
 getcell gf180mcu_ocd_io__asig_5p0
 box move e 200um
+getcell gf180mcu_ocd_io__bi_t
+box move e 200um
 getcell gf180mcu_ocd_io__bi_24t
+box move e 200um
+getcell gf180mcu_ocd_io__bi_a
 box move e 200um
 getcell gf180mcu_ocd_io__dvdd
 box move e 200um
