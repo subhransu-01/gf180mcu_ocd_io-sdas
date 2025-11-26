@@ -29,5 +29,5 @@ module gf180mcu_ocd_io__vdd (DVDD, DVSS, VDD, VSS);
 	inout	DVSS;
 	inout	VDD;
 	inout	VSS;
-	supply1	DVDD;
+	supply1	VDD;
 endmodule

@@ -24,9 +24,10 @@
   `timescale 1ns / 1ps
   `delay_mode_path
 `endif
-module gf180mcu_ocd_io__dvdd (DVDD, DVSS, VSS);
+module gf180mcu_ocd_io__dvdd (DVDD, DVSS, VDD, VSS);
 	inout	DVDD;
 	inout	DVSS;
+	inout	VDD;
 	inout	VSS;
 	supply1	DVDD;
 endmodule
