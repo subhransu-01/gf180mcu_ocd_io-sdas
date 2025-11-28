@@ -1,7 +1,7 @@
 v {xschem version=3.4.6 file_version=1.2}
 G {}
 K {type=subcircuit
-format="@name @@A @@CS @@DVDD @@DVSS @@IE @@OE @@PAD @@PD @@PDRV0 @@PDRV1 @@PU @@SL @@VDD @@VSS @@Y @symname"
+format="@name @@A @@ANA @@CS @@DVDD @@DVSS @@IE @@OE @@PAD @@PD @@PDRV0 @@PDRV1 @@PU @@SL @@VDD @@VSS @@Y @symname"
 template="name=x1"
 }
 V {}

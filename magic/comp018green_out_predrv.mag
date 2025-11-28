@@ -1,13 +1,13 @@
 magic
 tech gf180mcuD
 magscale 1 10
-timestamp 1758724778
+timestamp 1764279030
 << isosubstrate >>
 rect -83 -83 3677 6020
 << nwell >>
-rect -83 3038 3677 6020
-rect -83 2098 1171 3038
-<< mvnmos >>
+rect -86 3035 3680 6023
+rect -86 2095 1171 3035
+<< hvnmos >>
 rect 3119 1988 3259 2228
 rect 335 270 475 1470
 rect 579 270 719 1470
@@ -20,7 +20,7 @@ rect 2215 270 2355 1470
 rect 2459 270 2599 1470
 rect 2875 270 3015 1470
 rect 3119 270 3259 1470
-<< mvpmos >>
+<< hvpmos >>
 rect 335 3267 475 5667
 rect 579 3267 719 5667
 rect 823 3267 963 5667

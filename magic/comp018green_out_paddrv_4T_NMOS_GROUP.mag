@@ -1,7 +1,7 @@
 magic
 tech gf180mcuD
 magscale 1 10
-timestamp 1758561184
+timestamp 1764280956
 << polysilicon >>
 rect 803 8977 1033 8996
 rect 803 8931 845 8977
@@ -165,43 +165,43 @@ rect 9756 1059 9767 1105
 rect 9907 1059 9918 1105
 rect 9756 1048 9918 1059
 use comp018green_out_drv_nleg_4T  comp018green_out_drv_nleg_4T_0
-timestamp 1758561184
+timestamp 1764280956
 transform 1 0 7641 0 1 680
 box 48 444 2468 8220
 use comp018green_out_drv_nleg_4T  comp018green_out_drv_nleg_4T_1
-timestamp 1758561184
+timestamp 1764280956
 transform 1 0 5293 0 1 680
 box 48 444 2468 8220
 use comp018green_out_drv_nleg_4T  comp018green_out_drv_nleg_4T_2
-timestamp 1758561184
+timestamp 1764280956
 transform 1 0 2945 0 1 680
 box 48 444 2468 8220
 use comp018green_out_drv_nleg_4T  comp018green_out_drv_nleg_4T_3
-timestamp 1758561184
+timestamp 1764280956
 transform 1 0 597 0 1 680
 box 48 444 2468 8220
 use GR_NMOS_4T  GR_NMOS_4T_0
-timestamp 1758561184
+timestamp 1764279656
 transform 1 0 363 0 1 436
 box -1730 -583 11766 10481
 use nmos_4T_metal_stack  nmos_4T_metal_stack_0
-timestamp 1758561184
+timestamp 1764272961
 transform -1 0 10151 0 1 812
 box -44 400 2074 8000
 use nmos_4T_metal_stack  nmos_4T_metal_stack_1
-timestamp 1758561184
+timestamp 1764272961
 transform 1 0 2951 0 1 812
 box -44 400 2074 8000
 use nmos_4T_metal_stack  nmos_4T_metal_stack_2
-timestamp 1758561184
+timestamp 1764272961
 transform 1 0 5299 0 1 812
 box -44 400 2074 8000
 use nmos_4T_metal_stack  nmos_4T_metal_stack_3
-timestamp 1758561184
+timestamp 1764272961
 transform 1 0 7647 0 1 812
 box -44 400 2074 8000
 use nmos_4T_metal_stack  nmos_4T_metal_stack_4
-timestamp 1758561184
+timestamp 1764272961
 transform 1 0 603 0 1 812
 box -44 400 2074 8000
 << end >>

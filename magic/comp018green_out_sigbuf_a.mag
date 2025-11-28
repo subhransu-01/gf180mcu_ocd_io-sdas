@@ -1,16 +1,18 @@
 magic
 tech gf180mcuD
 magscale 1 10
-timestamp 1758724778
+timestamp 1764279030
 << isosubstrate >>
 rect 392 -83 2701 2911
 << nwell >>
-rect 392 2575 2701 2911
-rect 1385 1213 2701 2575
-<< mvnmos >>
+rect 1382 2911 2704 2914
+rect 392 2575 2704 2911
+rect 1382 1242 2704 2575
+rect 1385 1213 2701 1242
+<< hvnmos >>
 rect 1913 270 2053 870
 rect 2157 270 2297 870
-<< mvpmos >>
+<< hvpmos >>
 rect 1913 1358 2053 2558
 rect 2157 1358 2297 2558
 << mvndiff >>
@@ -379,9 +381,9 @@ rect 2442 22 2550 68
 rect 2596 22 2607 1008
 rect 1479 11 2607 22
 use lvlshift_up  lvlshift_up_0
-timestamp 1758724778
+timestamp 1764279030
 transform 1 0 -17795 0 1 -53410
-box 18187 53410 19183 55985
+box 18130 53410 19237 55988
 << labels >>
 rlabel metal1 s 2349 1100 2349 1100 4 AB
 port 2 nsew

@@ -27,8 +27,8 @@ Cell gf180mcu_ocd_io__asig_5p0 (1) disconnected node: VSS
 Subcircuit summary:
 Circuit 1: gf180mcu_ocd_io__asig_5p0                          |Circuit 2: gf180mcu_ocd_io__asig_5p0                          
 --------------------------------------------------------------|--------------------------------------------------------------
-diode_pd2nw_06v0 (4->1)                                       |diode_pd2nw_06v0 (4->1)                                       
 diode_nd2ps_06v0 (8->2)                                       |diode_nd2ps_06v0 (8->2)                                       
+diode_pd2nw_06v0 (4->1)                                       |diode_pd2nw_06v0 (4->1)                                       
 cap_nmos_06v0 (36->1)                                         |cap_nmos_06v0 (36->1)                                         
 Number of devices: 4                                          |Number of devices: 4                                          
 Number of nets: 3                                             |Number of nets: 3                                             

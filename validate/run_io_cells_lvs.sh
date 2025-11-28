@@ -20,6 +20,7 @@ set iocells {}
 lappend iocells gf180mcu_ocd_io__asig_5p0
 lappend iocells gf180mcu_ocd_io__bi_24t
 lappend iocells gf180mcu_ocd_io__bi_t
+lappend iocells gf180mcu_ocd_io__bi_a
 lappend iocells gf180mcu_ocd_io__brk2
 lappend iocells gf180mcu_ocd_io__brk5
 lappend iocells gf180mcu_ocd_io__cor
@@ -57,6 +58,7 @@ pushd ../cells/
 
 (cd asig_5p0 ; xschem -n -s -r -x -q --tcl "set top_is_subckt 1" --rcfile xschemrc -o ${curdir}/../netlist/schematic -N gf180mcu_ocd_io__asig_5p0.spice gf180mcu_ocd_io__asig_5p0.sch)
 (cd bi_t ; xschem -n -s -r -x -q --tcl "set top_is_subckt 1" --rcfile xschemrc -o ${curdir}/../netlist/schematic -N gf180mcu_ocd_io__bi_t.spice gf180mcu_ocd_io__bi_t.sch)
+(cd bi_a ; xschem -n -s -r -x -q --tcl "set top_is_subckt 1" --rcfile xschemrc -o ${curdir}/../netlist/schematic -N gf180mcu_ocd_io__bi_a.spice gf180mcu_ocd_io__bi_a.sch)
 (cd bi_24t ; xschem -n -s -r -x -q --tcl "set top_is_subckt 1" --rcfile xschemrc -o ${curdir}/../netlist/schematic -N gf180mcu_ocd_io__bi_24t.spice gf180mcu_ocd_io__bi_24t.sch)
 (cd brk2 ; xschem -n -s -r -x -q --tcl "set top_is_subckt 1" --rcfile xschemrc -o ${curdir}/../netlist/schematic -N gf180mcu_ocd_io__brk2.spice gf180mcu_ocd_io__brk2.sch)
 (cd brk5 ; xschem -n -s -r -x -q --tcl "set top_is_subckt 1" --rcfile xschemrc -o ${curdir}/../netlist/schematic -N gf180mcu_ocd_io__brk5.spice gf180mcu_ocd_io__brk5.sch)
@@ -79,6 +81,7 @@ export NETGEN_COLUMNS=60
 netgen -batch lvs "../netlist/layout/gf180mcu_ocd_io__asig_5p0.spice gf180mcu_ocd_io__asig_5p0" "../netlist/schematic/gf180mcu_ocd_io__asig_5p0.spice gf180mcu_ocd_io__asig_5p0" $PDK_ROOT/$PDK/libs.tech/netgen/${PDK}_setup.tcl asig_5p0_comp.out
 netgen -batch lvs "../netlist/layout/gf180mcu_ocd_io__bi_24t.spice gf180mcu_ocd_io__bi_24t" "../netlist/schematic/gf180mcu_ocd_io__bi_24t.spice gf180mcu_ocd_io__bi_24t" $PDK_ROOT/$PDK/libs.tech/netgen/${PDK}_setup.tcl bi_24t_comp.out
 netgen -batch lvs "../netlist/layout/gf180mcu_ocd_io__bi_t.spice gf180mcu_ocd_io__bi_t" "../netlist/schematic/gf180mcu_ocd_io__bi_t.spice gf180mcu_ocd_io__bi_t" $PDK_ROOT/$PDK/libs.tech/netgen/${PDK}_setup.tcl bi_t_comp.out
+netgen -batch lvs "../netlist/layout/gf180mcu_ocd_io__bi_a.spice gf180mcu_ocd_io__bi_a" "../netlist/schematic/gf180mcu_ocd_io__bi_a.spice gf180mcu_ocd_io__bi_a" $PDK_ROOT/$PDK/libs.tech/netgen/${PDK}_setup.tcl bi_a_comp.out
 netgen -batch lvs "../netlist/layout/gf180mcu_ocd_io__brk2.spice gf180mcu_ocd_io__brk2" "../netlist/schematic/gf180mcu_ocd_io__brk2.spice gf180mcu_ocd_io__brk2" $PDK_ROOT/$PDK/libs.tech/netgen/${PDK}_setup.tcl brk2_comp.out
 netgen -batch lvs "../netlist/layout/gf180mcu_ocd_io__brk5.spice gf180mcu_ocd_io__brk5" "../netlist/schematic/gf180mcu_ocd_io__brk5.spice gf180mcu_ocd_io__brk5" $PDK_ROOT/$PDK/libs.tech/netgen/${PDK}_setup.tcl brk5_comp.out
 netgen -batch lvs "../netlist/layout/gf180mcu_ocd_io__cor.spice gf180mcu_ocd_io__cor" "../netlist/schematic/gf180mcu_ocd_io__cor.spice gf180mcu_ocd_io__cor" $PDK_ROOT/$PDK/libs.tech/netgen/${PDK}_setup.tcl cor_comp.out

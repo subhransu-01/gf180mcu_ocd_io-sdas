@@ -102,8 +102,8 @@ pfet_06v0 (115->79)                                           |pfet_06v0 (79)
 nfet_06v0 (118->79)                                           |nfet_06v0 (79)                                                
 ppolyf_u (12->2)                                              |ppolyf_u (12->2)                                              
 diode_pd2nw_03v3 (12->10)                                     |diode_pd2nw_03v3 (12->10)                                     
-diode_pd2nw_06v0 (2->1)                                       |diode_pd2nw_06v0 (2->1)                                       
 diode_nd2ps_06v0 (2->1)                                       |diode_nd2ps_06v0 (2->1)                                       
+diode_pd2nw_06v0 (2->1)                                       |diode_pd2nw_06v0 (2->1)                                       
 cap_nmos_06v0 (14->1)                                         |cap_nmos_06v0 (14->1)                                         
 Number of devices: 251                                        |Number of devices: 251                                        
 Number of nets: 115                                           |Number of nets: 115                                           

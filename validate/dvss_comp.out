@@ -1,17 +1,4 @@
 
-Circuit 1 cell cap_nmos_06v0 and Circuit 2 cell cap_nmos_06v0 are black boxes.
-Warning: Equate pins:  cell cap_nmos_06v0 is a placeholder, treated as a black box.
-Warning: Equate pins:  cell cap_nmos_06v0 is a placeholder, treated as a black box.
-
-Subcircuit pins:
-Circuit 1: cap_nmos_06v0                                      |Circuit 2: cap_nmos_06v0                                      
---------------------------------------------------------------|--------------------------------------------------------------
-1                                                             |1                                                             
-2                                                             |2                                                             
------------------------------------------------------------------------------------------------------------------------------
-Cell pin lists are equivalent.
-Device classes cap_nmos_06v0 and cap_nmos_06v0 are equivalent.
-
 Circuit 1 cell ppolyf_u and Circuit 2 cell ppolyf_u are black boxes.
 Warning: Equate pins:  cell ppolyf_u is a placeholder, treated as a black box.
 Warning: Equate pins:  cell ppolyf_u is a placeholder, treated as a black box.
@@ -25,6 +12,19 @@ Circuit 1: ppolyf_u                                           |Circuit 2: ppolyf
 -----------------------------------------------------------------------------------------------------------------------------
 Cell pin lists are equivalent.
 Device classes ppolyf_u and ppolyf_u are equivalent.
+
+Circuit 1 cell cap_nmos_06v0 and Circuit 2 cell cap_nmos_06v0 are black boxes.
+Warning: Equate pins:  cell cap_nmos_06v0 is a placeholder, treated as a black box.
+Warning: Equate pins:  cell cap_nmos_06v0 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: cap_nmos_06v0                                      |Circuit 2: cap_nmos_06v0                                      
+--------------------------------------------------------------|--------------------------------------------------------------
+1                                                             |1                                                             
+2                                                             |2                                                             
+-----------------------------------------------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes cap_nmos_06v0 and cap_nmos_06v0 are equivalent.
 
 Circuit 1 cell nfet_06v0 and Circuit 2 cell nfet_06v0 are black boxes.
 Warning: Equate pins:  cell nfet_06v0 is a placeholder, treated as a black box.

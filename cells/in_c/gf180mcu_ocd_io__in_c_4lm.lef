@@ -273,7 +273,7 @@ MACRO gf180mcu_ocd_io__in_c
   END Y
   OBS
       LAYER Nwell ;
-        RECT 1.630 68.745 73.180 346.385 ;
+        RECT 1.630 68.745 73.195 346.385 ;
       LAYER Metal1 ;
         RECT -0.160 65.540 75.160 349.785 ;
       LAYER Metal2 ;

@@ -1,8 +1,8 @@
 magic
 tech gf180mcuD
 magscale 1 10
-timestamp 1758724778
-<< mvnmos >>
+timestamp 1764281188
+<< hvnmos >>
 rect 206 132 366 7532
 rect 2010 132 2170 7532
 << mvndiff >>
@@ -39,4 +39,6 @@ rect 1165 7519 1211 7532
 rect 1165 132 1211 145
 rect 2269 7519 2315 7532
 rect 2269 132 2315 145
+<< properties >>
+string MASKHINTS_NPLUS 16 8 2360 7656
 << end >>

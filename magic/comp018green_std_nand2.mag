@@ -4,10 +4,10 @@ magscale 1 10
 timestamp 1758561184
 << nwell >>
 rect -83 1292 1139 2586
-<< mvnmos >>
+<< hvnmos >>
 rect 336 281 476 881
 rect 580 281 720 881
-<< mvpmos >>
+<< hvpmos >>
 rect 336 1633 476 2233
 rect 580 1633 720 2233
 << mvndiff >>

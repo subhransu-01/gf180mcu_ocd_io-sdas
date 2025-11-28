@@ -1,7 +1,7 @@
 magic
 tech gf180mcuD
 magscale 1 10
-timestamp 1758892345
+timestamp 1764280608
 << metal2 >>
 rect 1193 69741 1269 69970
 rect 2066 69741 2142 69970
@@ -61,11 +61,11 @@ rect 0 14000 1000 17000
 rect 14000 14000 15000 17000
 rect 1500 400 13500 12400
 use 5LM_METAL_RAIL_PAD_60  5LM_METAL_RAIL_PAD_60_0
-timestamp 1586916644
+timestamp 1764272961
 transform 1 0 0 0 1 0
 box -32 0 15032 69968
 use GF_NI_IN_C_BASE  GF_NI_IN_C_BASE_0
-timestamp 1758892345
+timestamp 1764280608
 transform 1 0 -32 0 1 12400
 box 0 0 15064 57570
 << labels >>
@@ -186,4 +186,5 @@ string FIXED_BBOX 0 0 15000 70000
 string LEFclass PAD INPUT
 string LEFsite GF_IO_Site
 string LEFsymmetry X Y R90
+string MASKHINTS_ESD_ID 1391 26458 13609 39752 1963 14321 13043 23805
 << end >>

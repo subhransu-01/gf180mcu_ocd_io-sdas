@@ -1,16 +1,16 @@
 magic
 tech gf180mcuD
 magscale 1 10
-timestamp 1758724778
+timestamp 1764279656
 << isosubstrate >>
 rect -83 -83 5981 8547
 << nwell >>
-rect -83 6391 5981 8547
+rect -83 6413 5981 8547
 rect 454 3720 5444 5844
-rect -83 2617 5981 3173
-rect -83 473 473 2617
-rect 5425 473 5981 2617
-rect -83 -83 5981 473
+rect -86 2614 5984 3176
+rect -86 476 451 2614
+rect 5447 476 5984 2614
+rect -86 -86 5984 476
 << psubdiff >>
 rect 0 6305 5898 6327
 rect 0 3259 22 6305
@@ -5509,4 +5509,6 @@ rlabel metal1 s 494 8257 494 8257 4 DVDD
 port 3 nsew
 rlabel metal1 s 494 6132 494 6132 4 DVSS
 port 4 nsew
+<< properties >>
+string MASKHINTS_PPLUS -32 3205 422 6331 5476 3205 5930 6331
 << end >>
