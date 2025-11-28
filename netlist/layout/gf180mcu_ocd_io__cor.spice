@@ -250,8 +250,8 @@ X43 a_4685_27789# a_3781_27789# comp018green_esd_rc_v5p0_0/VPLUS comp018green_es
 .ends
 
 .subckt ESD_CLAMP_COR power_via_cor_3_0/m1_14757_49610# power_via_cor_5_0/m1_14757_35210#
-+ power_via_cor_5_0/m1_14757_49610# power_via_cor_3_0/m1_14757_35210# comp018green_esd_clamp_v5p0_1_0/comp018green_esd_rc_v5p0_1_0/VPLUS
-+ VSUBS comp018green_esd_clamp_v5p0_2_0/comp018green_esd_rc_v5p0_0/VPLUS
++ power_via_cor_5_0/m1_14757_49610# comp018green_esd_clamp_v5p0_1_0/comp018green_esd_rc_v5p0_1_0/VPLUS
++ power_via_cor_3_0/m1_14757_35210# VSUBS comp018green_esd_clamp_v5p0_2_0/comp018green_esd_rc_v5p0_0/VPLUS
 Xcomp018green_esd_clamp_v5p0_1_0 VSUBS comp018green_esd_clamp_v5p0_1_0/comp018green_esd_rc_v5p0_1_0/VPLUS
 + comp018green_esd_clamp_v5p0_1
 Xcomp018green_esd_clamp_v5p0_2_0 comp018green_esd_clamp_v5p0_2_0/comp018green_esd_rc_v5p0_0/VPLUS
@@ -276,9 +276,9 @@ X3 a_3083_6541# VMINUS cap_nmos_06v0 c_width=25u c_length=10u
 
 .subckt GF_NI_COR_BASE ESD_CLAMP_COR_0/power_via_cor_3_0/m1_14757_35210# ESD_CLAMP_COR_0/power_via_cor_3_0/m1_14757_49610#
 + ESD_CLAMP_COR_0/power_via_cor_5_0/m1_14757_35210# moscap_corner_0/a_647_6541# moscap_corner_6/a_647_529#
-+ ESD_CLAMP_COR_0/power_via_cor_5_0/m1_14757_49610# moscap_corner_6/a_647_6541# moscap_corner_4/a_647_529#
-+ moscap_corner_0/a_647_529# VDD DVDD moscap_corner_4/a_647_6541# moscap_corner_1/a_647_529#
-+ VSS
++ VDD ESD_CLAMP_COR_0/power_via_cor_5_0/m1_14757_49610# moscap_corner_6/a_647_6541#
++ moscap_corner_4/a_647_529# moscap_corner_0/a_647_529# DVDD VSS moscap_corner_4/a_647_6541#
++ moscap_corner_1/a_647_529#
 Xmoscap_corner_1_0 moscap_corner_6/a_647_6541# moscap_corner_6/a_647_529# VSS moscap_corner_1
 Xmoscap_corner_0 VSS moscap_corner_0/a_647_6541# moscap_corner_0/a_647_529# moscap_corner
 Xmoscap_corner_1 VSS moscap_corner_1/a_647_529# moscap_corner_1/a_647_529# moscap_corner
@@ -288,14 +288,14 @@ Xmoscap_corner_5 VSS moscap_corner_6/a_647_6541# moscap_corner_6/a_647_529# mosc
 Xmoscap_corner_4 VSS moscap_corner_4/a_647_6541# moscap_corner_4/a_647_529# moscap_corner
 Xmoscap_corner_6 VSS moscap_corner_6/a_647_6541# moscap_corner_6/a_647_529# moscap_corner
 XESD_CLAMP_COR_0 ESD_CLAMP_COR_0/power_via_cor_3_0/m1_14757_49610# ESD_CLAMP_COR_0/power_via_cor_5_0/m1_14757_35210#
-+ ESD_CLAMP_COR_0/power_via_cor_5_0/m1_14757_49610# ESD_CLAMP_COR_0/power_via_cor_3_0/m1_14757_35210#
-+ VDD VSS DVDD ESD_CLAMP_COR
++ ESD_CLAMP_COR_0/power_via_cor_5_0/m1_14757_49610# VDD ESD_CLAMP_COR_0/power_via_cor_3_0/m1_14757_35210#
++ VSS DVDD ESD_CLAMP_COR
 Xmoscap_corner_2_0 VSS moscap_corner_4/a_647_6541# moscap_corner_4/a_647_529# moscap_corner_2
 Xmoscap_corner_3_0 VSS moscap_corner_1/a_647_529# moscap_corner_1/a_647_529# moscap_corner_3
 .ends
 
 .subckt gf180mcu_ocd_io__cor DVDD VDD VSS
-XGF_NI_COR_BASE_0 VSS VSS VSS DVDD DVDD VSS DVDD DVDD DVDD VDD DVDD DVDD DVDD VSS
+XGF_NI_COR_BASE_0 VSS VSS VSS DVDD DVDD VDD VSS DVDD DVDD DVDD DVDD VSS DVDD DVDD
 + GF_NI_COR_BASE
 .ends
 

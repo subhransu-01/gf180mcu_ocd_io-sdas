@@ -1,7 +1,7 @@
 magic
 tech gf180mcuD
 magscale 1 10
-timestamp 1764342841
+timestamp 1764349459
 << nwell >>
 rect -13 1870 695 2578
 rect 1136 1870 1844 2578
@@ -946,51 +946,51 @@ rect 12136 3292 12146 3348
 rect 12306 3292 12316 3348
 rect 12136 3282 12316 3292
 use comp018green_in_cms_smt  comp018green_in_cms_smt_0
-timestamp 1764279030
+timestamp 1764349289
 transform 1 0 1532 0 1 3158
 box -1470 -83 6875 2578
 use comp018green_in_drv  comp018green_in_drv_0
-timestamp 1764280036
+timestamp 1764347740
 transform 1 0 8900 0 1 3158
 box -496 -83 4246 2578
 use comp018green_in_logic_pupd  comp018green_in_logic_pupd_0
-timestamp 1764342841
+timestamp 1764347740
 transform -1 0 13932 0 1 9724
 box 946 -3664 2905 1086
 use comp018green_in_pupd  comp018green_in_pupd_0
-timestamp 1764279030
+timestamp 1764347740
 transform 0 -1 2979 -1 0 14857
 box -83 -7815 8792 3035
 use comp018green_sigbuf  comp018green_sigbuf_0
-timestamp 1764279030
+timestamp 1764347740
 transform 1 0 7863 0 -1 2492
 box 349 -83 2798 2578
 use comp018green_sigbuf  comp018green_sigbuf_1
-timestamp 1764279030
+timestamp 1764347740
 transform 1 0 3489 0 -1 2492
 box 349 -83 2798 2578
 use comp018green_sigbuf  comp018green_sigbuf_2
-timestamp 1764279030
+timestamp 1764347740
 transform -1 0 13197 0 -1 2492
 box 349 -83 2798 2578
 use comp018green_sigbuf  comp018green_sigbuf_3
-timestamp 1764279030
+timestamp 1764347740
 transform -1 0 8823 0 -1 2492
 box 349 -83 2798 2578
 use lv_inv  lv_inv_14
-timestamp 1764342411
+timestamp 1764347740
 transform 1 0 -13774 0 1 -50649
 box 15980 50799 16518 51697
 use lv_inv  lv_inv_15
-timestamp 1764342411
+timestamp 1764347740
 transform 1 0 -13480 0 1 -50649
 box 15980 50799 16518 51697
 use lv_inv  lv_inv_18
-timestamp 1764342411
+timestamp 1764347740
 transform 1 0 -13776 0 -1 53236
 box 15980 50799 16518 51697
 use lv_inv  lv_inv_19
-timestamp 1764342411
+timestamp 1764347740
 transform 1 0 -13482 0 -1 53236
 box 15980 50799 16518 51697
 << labels >>

@@ -1,7 +1,7 @@
 magic
 tech gf180mcuD
 magscale 1 10
-timestamp 1764277853
+timestamp 1764349902
 << isosubstrate >>
 rect 251 53100 14727 57210
 rect 2457 47106 12521 53100
@@ -19621,7 +19621,7 @@ rect 7874 1636 9810 4564
 rect 10244 1636 12180 4564
 rect 12861 1636 14673 4564
 use comp018green_esd_clamp_v5p0_DVSS  comp018green_esd_clamp_v5p0_DVSS_0
-timestamp 1764277680
+timestamp 1764349902
 transform 1 0 1008 0 1 1090
 box -747 -51 13709 46134
 << labels >>

@@ -1,7 +1,7 @@
 magic
 tech gf180mcuD
 magscale 1 10
-timestamp 1764281188
+timestamp 1764347611
 << polysilicon >>
 rect 794 8377 972 8396
 rect 794 8331 813 8377
@@ -177,43 +177,43 @@ rect 9381 657 9392 703
 rect 9230 646 9392 657
 rect 9730 363 9967 812
 use comp018green_out_drv_nleg_6T  comp018green_out_drv_nleg_6T_0
-timestamp 1764281188
+timestamp 1764347611
 transform 1 0 7221 0 1 680
 box 48 42 2328 7632
 use comp018green_out_drv_nleg_6T  comp018green_out_drv_nleg_6T_1
-timestamp 1764281188
+timestamp 1764347611
 transform 1 0 5013 0 1 680
 box 48 42 2328 7632
 use comp018green_out_drv_nleg_6T  comp018green_out_drv_nleg_6T_2
-timestamp 1764281188
+timestamp 1764347611
 transform 1 0 2805 0 1 680
 box 48 42 2328 7632
 use comp018green_out_drv_nleg_6T  comp018green_out_drv_nleg_6T_3
-timestamp 1764281188
+timestamp 1764347611
 transform 1 0 597 0 1 680
 box 48 42 2328 7632
 use GR_NMOS  GR_NMOS_0
-timestamp 1764270562
+timestamp 1764347611
 transform 1 0 363 0 1 436
 box -1789 -834 11222 10481
 use nmos_metal_stack  nmos_metal_stack_0
-timestamp 1758724778
+timestamp 1764347611
 transform -1 0 9591 0 1 812
 box -44 0 2004 7400
 use nmos_metal_stack  nmos_metal_stack_1
-timestamp 1758724778
+timestamp 1764347611
 transform 1 0 7227 0 1 812
 box -44 0 2004 7400
 use nmos_metal_stack  nmos_metal_stack_2
-timestamp 1758724778
+timestamp 1764347611
 transform 1 0 5019 0 1 812
 box -44 0 2004 7400
 use nmos_metal_stack  nmos_metal_stack_3
-timestamp 1758724778
+timestamp 1764347611
 transform 1 0 2811 0 1 812
 box -44 0 2004 7400
 use nmos_metal_stack  nmos_metal_stack_4
-timestamp 1758724778
+timestamp 1764347611
 transform 1 0 603 0 1 812
 box -44 0 2004 7400
 << end >>

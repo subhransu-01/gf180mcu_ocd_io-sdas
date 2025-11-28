@@ -1,7 +1,7 @@
 magic
 tech gf180mcuD
 magscale 1 10
-timestamp 1764279030
+timestamp 1764347740
 << isosubstrate >>
 rect 406 -83 2795 2575
 << nwell >>
@@ -445,7 +445,7 @@ rect 2536 22 2644 68
 rect 2690 22 2701 1008
 rect 1291 11 2701 22
 use lvlshift_up  lvlshift_up_0
-timestamp 1764279030
+timestamp 1764347740
 transform 1 0 -17781 0 1 -53410
 box 18130 53410 19237 55988
 << labels >>

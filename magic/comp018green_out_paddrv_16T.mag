@@ -1,7 +1,7 @@
 magic
 tech gf180mcuD
 magscale 1 10
-timestamp 1764280956
+timestamp 1764347740
 << isosubstrate >>
 rect -257 10974 13760 27678
 rect -39 -129 13470 10974
@@ -886,11 +886,11 @@ rect 11615 971 11625 2691
 rect 11681 971 11691 2691
 rect 11615 961 11691 971
 use comp018green_out_paddrv_4T_NMOS_GROUP  comp018green_out_paddrv_4T_NMOS_GROUP_0
-timestamp 1764280956
+timestamp 1764347740
 transform 1 0 1339 0 1 31
 box -1367 -147 12129 10917
 use comp018green_out_paddrv_4T_PMOS_GROUP  comp018green_out_paddrv_4T_PMOS_GROUP_0
-timestamp 1764280956
+timestamp 1764347740
 transform 1 0 548 0 1 12347
 box -767 -1312 13147 15294
 << end >>

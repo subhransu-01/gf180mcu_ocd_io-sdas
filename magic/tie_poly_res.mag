@@ -2,8 +2,6 @@ magic
 tech gf180mcuD
 magscale 1 10
 timestamp 1758722869
-<< checkpaint >>
-rect -2756 54700 -1466 56453
 << nwell >>
 rect -2756 54700 -1466 56453
 << nsubdiff >>

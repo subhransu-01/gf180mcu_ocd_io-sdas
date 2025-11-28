@@ -1,7 +1,7 @@
 magic
 tech gf180mcuD
 magscale 1 10
-timestamp 1764277853
+timestamp 1764349892
 << metal2 >>
 rect 272 69800 2172 70000
 rect 2752 69800 4802 70000
@@ -64,11 +64,11 @@ rect 0 14000 1000 17000
 rect 14000 14000 15000 17000
 rect 1500 400 13500 12400
 use 5LM_METAL_RAIL_PAD_60  5LM_METAL_RAIL_PAD_60_0
-timestamp 1764272961
+timestamp 1764347740
 transform 1 0 0 0 1 0
 box -32 0 15032 69968
 use GF_NI_VDD_BASE  GF_NI_VDD_BASE_0
-timestamp 1764277765
+timestamp 1764349892
 transform 1 0 11 0 1 12400
 box -11 0 14989 57600
 << labels >>
