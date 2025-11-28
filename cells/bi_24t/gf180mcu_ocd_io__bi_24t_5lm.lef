@@ -110,10 +110,6 @@ MACRO gf180mcu_ocd_io__bi_24t
     END
     PORT
       LAYER Metal5 ;
-        RECT 70.000 262.000 75.000 269.000 ;
-    END
-    PORT
-      LAYER Metal5 ;
         RECT 70.000 270.000 75.000 277.000 ;
     END
     PORT
@@ -285,10 +281,6 @@ MACRO gf180mcu_ocd_io__bi_24t
     END
     PORT
       LAYER Metal5 ;
-        RECT 70.000 254.000 75.000 261.000 ;
-    END
-    PORT
-      LAYER Metal5 ;
         RECT 70.000 310.000 75.000 317.000 ;
     END
   END VDD
@@ -346,11 +338,13 @@ MACRO gf180mcu_ocd_io__bi_24t
       LAYER Metal4 ;
         RECT 0.000 0.000 75.000 348.390 ;
       LAYER Metal5 ;
-        RECT 5.600 69.400 69.400 348.390 ;
-        RECT 3.500 62.600 71.500 69.400 ;
+        RECT 5.600 269.400 69.400 348.390 ;
+        RECT 5.600 253.600 75.000 269.400 ;
+        RECT 5.600 69.400 69.400 253.600 ;
+        RECT 3.500 62.600 75.000 69.400 ;
         RECT 3.500 1.400 6.900 62.600 ;
-        RECT 68.100 1.400 71.500 62.600 ;
-        RECT 3.500 0.000 71.500 1.400 ;
+        RECT 68.100 1.400 75.000 62.600 ;
+        RECT 3.500 0.000 75.000 1.400 ;
   END
 END gf180mcu_ocd_io__bi_24t
 END LIBRARY
