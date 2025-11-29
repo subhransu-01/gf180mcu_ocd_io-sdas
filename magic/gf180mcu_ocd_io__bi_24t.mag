@@ -1,7 +1,7 @@
 magic
 tech gf180mcuD
 magscale 1 10
-timestamp 1764349821
+timestamp 1764453441
 << metal2 >>
 rect 672 69759 748 69952
 rect 1193 69759 1269 69952
@@ -70,7 +70,7 @@ timestamp 1764347740
 transform 1 0 0 0 1 0
 box -32 0 15032 69968
 use GF_NI_BI_24T_BASE  GF_NI_BI_24T_BASE_0
-timestamp 1764349804
+timestamp 1764453441
 transform 1 0 -32 0 1 12382
 box 0 370 15064 57570
 << labels >>
