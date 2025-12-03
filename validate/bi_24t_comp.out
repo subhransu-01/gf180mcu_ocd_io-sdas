@@ -112,43 +112,7 @@ Number of nets: 115                                           |Number of nets: 1
 Resolving symmetries by property value.
 Resolving symmetries by pin name.
 Resolving symmetries by net name.
-Netlists match with 26 symmetries with property errors.
-GF_NI_BI_24T_BASE_0//comp018green_out_paddrv_24T_0//comp018green_out_paddrv_6T_NMOS_GROUP_0//comp018green_out_drv_nleg_6T_1/nfet_06v0_dss:0 vs. io_out_24:28/drive_select_24:12/nfet_06v0_dss:x20:
- l circuit1: 3.78e-06   circuit2: 8e-07   (delta=130%, cutoff=1%)
-GF_NI_BI_24T_BASE_0//comp018green_out_paddrv_24T_0//comp018green_out_paddrv_6T_NMOS_GROUP_0//comp018green_out_drv_nleg_6T_1/nfet_06v0_dss:0 vs. io_out_24:28/drive_select_24:12/nfet_06v0_dss:x20:
-Property d_sab in circuit2 has no matching property in circuit1
-GF_NI_BI_24T_BASE_0//comp018green_out_paddrv_24T_0//comp018green_out_paddrv_6T_NMOS_GROUP_0//comp018green_out_drv_nleg_6T_2/nfet_06v0_dss:0 vs. io_out_24:28/drive_select_24:15/nfet_06v0_dss:x20:
- l circuit1: 3.78e-06   circuit2: 8e-07   (delta=130%, cutoff=1%)
-GF_NI_BI_24T_BASE_0//comp018green_out_paddrv_24T_0//comp018green_out_paddrv_6T_NMOS_GROUP_0//comp018green_out_drv_nleg_6T_2/nfet_06v0_dss:0 vs. io_out_24:28/drive_select_24:15/nfet_06v0_dss:x20:
-Property d_sab in circuit2 has no matching property in circuit1
-GF_NI_BI_24T_BASE_0//comp018green_out_paddrv_24T_0//comp018green_out_paddrv_6T_NMOS_GROUP_0//comp018green_out_drv_nleg_6T_3/nfet_06v0_dss:0 vs. io_out_24:28/drive_select_24:4/nfet_06v0_dss:x20:
- l circuit1: 3.78e-06   circuit2: 8e-07   (delta=130%, cutoff=1%)
-GF_NI_BI_24T_BASE_0//comp018green_out_paddrv_24T_0//comp018green_out_paddrv_6T_NMOS_GROUP_0//comp018green_out_drv_nleg_6T_3/nfet_06v0_dss:0 vs. io_out_24:28/drive_select_24:4/nfet_06v0_dss:x20:
-Property d_sab in circuit2 has no matching property in circuit1
-GF_NI_BI_24T_BASE_0//comp018green_out_paddrv_24T_0//comp018green_out_paddrv_6T_NMOS_GROUP_0//comp018green_out_drv_nleg_6T_0/nfet_06v0_dss:0 vs. io_out_24:28/drive_select_24:16/nfet_06v0_dss:x20:
- l circuit1: 3.78e-06   circuit2: 8e-07   (delta=130%, cutoff=1%)
-GF_NI_BI_24T_BASE_0//comp018green_out_paddrv_24T_0//comp018green_out_paddrv_6T_NMOS_GROUP_0//comp018green_out_drv_nleg_6T_0/nfet_06v0_dss:0 vs. io_out_24:28/drive_select_24:16/nfet_06v0_dss:x20:
-Property d_sab in circuit2 has no matching property in circuit1
-GF_NI_BI_24T_BASE_0//comp018green_out_paddrv_24T_0//comp018green_out_paddrv_6T_NMOS_GROUP_0//comp018green_out_drv_nleg_6T_1/nfet_06v0_dss:1 vs. io_out_24:28/drive_select_24:12/nfet_06v0_dss:x19:
- l circuit1: 2.8e-07   circuit2: 8e-07   (delta=96.3%, cutoff=1%)
- s_sab circuit1: 3.78e-06   circuit2: 2.8e-07   (delta=172%, cutoff=0%)
-GF_NI_BI_24T_BASE_0//comp018green_out_paddrv_24T_0//comp018green_out_paddrv_6T_NMOS_GROUP_0//comp018green_out_drv_nleg_6T_1/nfet_06v0_dss:1 vs. io_out_24:28/drive_select_24:12/nfet_06v0_dss:x19:
-Property d_sab in circuit2 has no matching property in circuit1
-GF_NI_BI_24T_BASE_0//comp018green_out_paddrv_24T_0//comp018green_out_paddrv_6T_NMOS_GROUP_0//comp018green_out_drv_nleg_6T_2/nfet_06v0_dss:1 vs. io_out_24:28/drive_select_24:15/nfet_06v0_dss:x19:
- l circuit1: 2.8e-07   circuit2: 8e-07   (delta=96.3%, cutoff=1%)
- s_sab circuit1: 3.78e-06   circuit2: 2.8e-07   (delta=172%, cutoff=0%)
-GF_NI_BI_24T_BASE_0//comp018green_out_paddrv_24T_0//comp018green_out_paddrv_6T_NMOS_GROUP_0//comp018green_out_drv_nleg_6T_2/nfet_06v0_dss:1 vs. io_out_24:28/drive_select_24:15/nfet_06v0_dss:x19:
-Property d_sab in circuit2 has no matching property in circuit1
-GF_NI_BI_24T_BASE_0//comp018green_out_paddrv_24T_0//comp018green_out_paddrv_6T_NMOS_GROUP_0//comp018green_out_drv_nleg_6T_3/nfet_06v0_dss:1 vs. io_out_24:28/drive_select_24:4/nfet_06v0_dss:x19:
- l circuit1: 2.8e-07   circuit2: 8e-07   (delta=96.3%, cutoff=1%)
- s_sab circuit1: 3.78e-06   circuit2: 2.8e-07   (delta=172%, cutoff=0%)
-GF_NI_BI_24T_BASE_0//comp018green_out_paddrv_24T_0//comp018green_out_paddrv_6T_NMOS_GROUP_0//comp018green_out_drv_nleg_6T_3/nfet_06v0_dss:1 vs. io_out_24:28/drive_select_24:4/nfet_06v0_dss:x19:
-Property d_sab in circuit2 has no matching property in circuit1
-GF_NI_BI_24T_BASE_0//comp018green_out_paddrv_24T_0//comp018green_out_paddrv_6T_NMOS_GROUP_0//comp018green_out_drv_nleg_6T_0/nfet_06v0_dss:1 vs. io_out_24:28/drive_select_24:16/nfet_06v0_dss:x19:
- l circuit1: 2.8e-07   circuit2: 8e-07   (delta=96.3%, cutoff=1%)
- s_sab circuit1: 3.78e-06   circuit2: 2.8e-07   (delta=172%, cutoff=0%)
-GF_NI_BI_24T_BASE_0//comp018green_out_paddrv_24T_0//comp018green_out_paddrv_6T_NMOS_GROUP_0//comp018green_out_drv_nleg_6T_0/nfet_06v0_dss:1 vs. io_out_24:28/drive_select_24:16/nfet_06v0_dss:x19:
-Property d_sab in circuit2 has no matching property in circuit1
+Netlists match with 26 symmetries.
 
 Subcircuit pins:
 Circuit 1: gf180mcu_ocd_io__bi_24t                            |Circuit 2: gf180mcu_ocd_io__bi_24t                            
@@ -171,7 +135,4 @@ Cell pin lists are equivalent.
 Device classes gf180mcu_ocd_io__bi_24t and gf180mcu_ocd_io__bi_24t are equivalent.
 
 Final result: Circuits match uniquely.
-Property errors were found.
-
-The following cells had property errors:
- gf180mcu_ocd_io__bi_24t
+.

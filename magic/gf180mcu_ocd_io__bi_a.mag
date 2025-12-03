@@ -1,7 +1,7 @@
 magic
 tech gf180mcuD
 magscale 1 10
-timestamp 1764453441
+timestamp 1764776141
 << ppolyres >>
 rect 3151 58293 3311 58364
 << metal1 >>
@@ -85,7 +85,7 @@ rect 0 14000 1000 17000
 rect 14000 14000 15000 17000
 rect 1500 400 13500 12400
 use 5LM_METAL_RAIL_PAD_60  5LM_METAL_RAIL_PAD_60_0
-timestamp 1764347740
+timestamp 1764776141
 transform 1 0 0 0 1 0
 box -32 0 15032 69968
 use GF_NI_BI_T_BASE  GF_NI_BI_T_BASE_0
