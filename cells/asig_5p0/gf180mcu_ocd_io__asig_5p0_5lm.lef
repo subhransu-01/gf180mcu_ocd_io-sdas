@@ -45,6 +45,10 @@ MACRO gf180mcu_ocd_io__asig_5p0
       LAYER Metal2 ;
         RECT 57.120 134.370 59.660 350.000 ;
     END
+    PORT
+      LAYER Metal5 ;
+        RECT 7.500 2.000 67.500 62.000 ;
+    END
   END ASIG5V
   PIN DVDD
     DIRECTION INOUT ;
@@ -228,10 +232,6 @@ MACRO gf180mcu_ocd_io__asig_5p0
     PORT
       LAYER Metal5 ;
         RECT 70.000 70.000 75.000 85.000 ;
-    END
-    PORT
-      LAYER Metal5 ;
-        RECT 7.500 2.000 67.500 62.000 ;
     END
   END DVSS
   PIN VDD
