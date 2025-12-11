@@ -83,10 +83,6 @@ Flattening unmatched subcell io_nand2_1 in circuit gf180mcu_ocd_io__bi_t (1)(2 i
 Flattening unmatched subcell io_inv_2 in circuit gf180mcu_ocd_io__bi_t (1)(4 instances)
 Flattening unmatched subcell io_lvlshft in circuit gf180mcu_ocd_io__bi_t (1)(2 instances)
 
-Removing zero-valued device vsrc from cell gf180mcu_ocd_io__bi_t (0) makes a better match
-Removing zero-valued device vsrc from cell gf180mcu_ocd_io__bi_t (0) makes a better match
-Making another compare attempt.
-
 Class gf180mcu_ocd_io__bi_t (0):  Merged 109 parallel devices.
 Class gf180mcu_ocd_io__bi_t (0):  Merged 7 series devices.
 Class gf180mcu_ocd_io__bi_t (1):  Merged 4 parallel devices.
@@ -111,7 +107,43 @@ Number of nets: 115                                           |Number of nets: 1
 Resolving symmetries by property value.
 Resolving symmetries by pin name.
 Resolving symmetries by net name.
-Netlists match with 26 symmetries.
+Netlists match with 26 symmetries with property errors.
+GF_NI_BI_T_BASE_0//comp018green_out_paddrv_16T_0//comp018green_out_paddrv_4T_NMOS_GROUP_0//comp018green_out_drv_nleg_4T_1/nfet_06v0_dss:0 vs. io_out:28/drive_select:12/nfet_06v0_dss:x20:
+ l circuit1: 2.8e-07   circuit2: 1.15e-06   (delta=122%, cutoff=1%)
+GF_NI_BI_T_BASE_0//comp018green_out_paddrv_16T_0//comp018green_out_paddrv_4T_NMOS_GROUP_0//comp018green_out_drv_nleg_4T_1/nfet_06v0_dss:0 vs. io_out:28/drive_select:12/nfet_06v0_dss:x20:
+Property s_sab in circuit2 has no matching property in circuit1
+GF_NI_BI_T_BASE_0//comp018green_out_paddrv_16T_0//comp018green_out_paddrv_4T_NMOS_GROUP_0//comp018green_out_drv_nleg_4T_2/nfet_06v0_dss:0 vs. io_out:28/drive_select:15/nfet_06v0_dss:x20:
+ l circuit1: 2.8e-07   circuit2: 1.15e-06   (delta=122%, cutoff=1%)
+GF_NI_BI_T_BASE_0//comp018green_out_paddrv_16T_0//comp018green_out_paddrv_4T_NMOS_GROUP_0//comp018green_out_drv_nleg_4T_2/nfet_06v0_dss:0 vs. io_out:28/drive_select:15/nfet_06v0_dss:x20:
+Property s_sab in circuit2 has no matching property in circuit1
+GF_NI_BI_T_BASE_0//comp018green_out_paddrv_16T_0//comp018green_out_paddrv_4T_NMOS_GROUP_0//comp018green_out_drv_nleg_4T_3/nfet_06v0_dss:0 vs. io_out:28/drive_select:4/nfet_06v0_dss:x20:
+ l circuit1: 2.8e-07   circuit2: 1.15e-06   (delta=122%, cutoff=1%)
+GF_NI_BI_T_BASE_0//comp018green_out_paddrv_16T_0//comp018green_out_paddrv_4T_NMOS_GROUP_0//comp018green_out_drv_nleg_4T_3/nfet_06v0_dss:0 vs. io_out:28/drive_select:4/nfet_06v0_dss:x20:
+Property s_sab in circuit2 has no matching property in circuit1
+GF_NI_BI_T_BASE_0//comp018green_out_paddrv_16T_0//comp018green_out_paddrv_4T_NMOS_GROUP_0//comp018green_out_drv_nleg_4T_0/nfet_06v0_dss:0 vs. io_out:28/drive_select:16/nfet_06v0_dss:x20:
+ l circuit1: 2.8e-07   circuit2: 1.15e-06   (delta=122%, cutoff=1%)
+GF_NI_BI_T_BASE_0//comp018green_out_paddrv_16T_0//comp018green_out_paddrv_4T_NMOS_GROUP_0//comp018green_out_drv_nleg_4T_0/nfet_06v0_dss:0 vs. io_out:28/drive_select:16/nfet_06v0_dss:x20:
+Property s_sab in circuit2 has no matching property in circuit1
+GF_NI_BI_T_BASE_0//comp018green_out_paddrv_16T_0//comp018green_out_paddrv_4T_NMOS_GROUP_0//comp018green_out_drv_nleg_4T_1/nfet_06v0_dss:1 vs. io_out:28/drive_select:12/nfet_06v0_dss:x19:
+ l circuit1: 3.78e-06   circuit2: 1.15e-06   (delta=107%, cutoff=1%)
+ d_sab circuit1: 2.8e-07   circuit2: 3.78e-06   (delta=172%, cutoff=0%)
+GF_NI_BI_T_BASE_0//comp018green_out_paddrv_16T_0//comp018green_out_paddrv_4T_NMOS_GROUP_0//comp018green_out_drv_nleg_4T_1/nfet_06v0_dss:1 vs. io_out:28/drive_select:12/nfet_06v0_dss:x19:
+Property s_sab in circuit2 has no matching property in circuit1
+GF_NI_BI_T_BASE_0//comp018green_out_paddrv_16T_0//comp018green_out_paddrv_4T_NMOS_GROUP_0//comp018green_out_drv_nleg_4T_2/nfet_06v0_dss:1 vs. io_out:28/drive_select:15/nfet_06v0_dss:x19:
+ l circuit1: 3.78e-06   circuit2: 1.15e-06   (delta=107%, cutoff=1%)
+ d_sab circuit1: 2.8e-07   circuit2: 3.78e-06   (delta=172%, cutoff=0%)
+GF_NI_BI_T_BASE_0//comp018green_out_paddrv_16T_0//comp018green_out_paddrv_4T_NMOS_GROUP_0//comp018green_out_drv_nleg_4T_2/nfet_06v0_dss:1 vs. io_out:28/drive_select:15/nfet_06v0_dss:x19:
+Property s_sab in circuit2 has no matching property in circuit1
+GF_NI_BI_T_BASE_0//comp018green_out_paddrv_16T_0//comp018green_out_paddrv_4T_NMOS_GROUP_0//comp018green_out_drv_nleg_4T_3/nfet_06v0_dss:1 vs. io_out:28/drive_select:4/nfet_06v0_dss:x19:
+ l circuit1: 3.78e-06   circuit2: 1.15e-06   (delta=107%, cutoff=1%)
+ d_sab circuit1: 2.8e-07   circuit2: 3.78e-06   (delta=172%, cutoff=0%)
+GF_NI_BI_T_BASE_0//comp018green_out_paddrv_16T_0//comp018green_out_paddrv_4T_NMOS_GROUP_0//comp018green_out_drv_nleg_4T_3/nfet_06v0_dss:1 vs. io_out:28/drive_select:4/nfet_06v0_dss:x19:
+Property s_sab in circuit2 has no matching property in circuit1
+GF_NI_BI_T_BASE_0//comp018green_out_paddrv_16T_0//comp018green_out_paddrv_4T_NMOS_GROUP_0//comp018green_out_drv_nleg_4T_0/nfet_06v0_dss:1 vs. io_out:28/drive_select:16/nfet_06v0_dss:x19:
+ l circuit1: 3.78e-06   circuit2: 1.15e-06   (delta=107%, cutoff=1%)
+ d_sab circuit1: 2.8e-07   circuit2: 3.78e-06   (delta=172%, cutoff=0%)
+GF_NI_BI_T_BASE_0//comp018green_out_paddrv_16T_0//comp018green_out_paddrv_4T_NMOS_GROUP_0//comp018green_out_drv_nleg_4T_0/nfet_06v0_dss:1 vs. io_out:28/drive_select:16/nfet_06v0_dss:x19:
+Property s_sab in circuit2 has no matching property in circuit1
 
 Subcircuit pins:
 Circuit 1: gf180mcu_ocd_io__bi_t                              |Circuit 2: gf180mcu_ocd_io__bi_t                              
@@ -136,4 +168,7 @@ Cell pin lists are equivalent.
 Device classes gf180mcu_ocd_io__bi_t and gf180mcu_ocd_io__bi_t are equivalent.
 
 Final result: Circuits match uniquely.
-.
+Property errors were found.
+
+The following cells had property errors:
+ gf180mcu_ocd_io__bi_t

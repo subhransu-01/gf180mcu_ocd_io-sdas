@@ -84,10 +84,6 @@ Flattening unmatched subcell io_nand2_1 in circuit gf180mcu_ocd_io__in_s (1)(2 i
 Flattening unmatched subcell io_inv_2 in circuit gf180mcu_ocd_io__in_s (1)(4 instances)
 Flattening unmatched subcell io_lvlshft in circuit gf180mcu_ocd_io__in_s (1)(2 instances)
 
-Removing zero-valued device vsrc from cell gf180mcu_ocd_io__in_s (0) makes a better match
-Removing zero-valued device vsrc from cell gf180mcu_ocd_io__in_s (0) makes a better match
-Making another compare attempt.
-
 Class gf180mcu_ocd_io__in_s (0):  Merged 114 parallel devices.
 Class gf180mcu_ocd_io__in_s (0):  Merged 7 series devices.
 Class gf180mcu_ocd_io__in_s (1):  Merged 7 parallel devices.

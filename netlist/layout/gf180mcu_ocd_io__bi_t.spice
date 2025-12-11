@@ -57,8 +57,8 @@ Xcomp018green_out_drv_pleg_4T_X_3 a_2360_2800# w_n5_111# PMOS_4T_metal_stack_1/m
 
 .subckt comp018green_out_drv_nleg_4T a_206_444# a_2080_444# a_2366_532# a_48_532#
 + a_436_532# VSUBS
-X0 a_436_532# a_206_444# a_48_532# VSUBS nfet_06v0_dss d_sab=3.78u s_sab=0.28u ad=0.14364n pd=83.56u as=10.64p ps=76.56u w=38u l=1.15u
-X1 a_2366_532# a_2080_444# a_436_532# VSUBS nfet_06v0_dss d_sab=0.28u s_sab=3.78u ad=10.64p pd=76.56u as=0.14364n ps=83.56u w=38u l=1.15u
+X0 a_436_532# a_206_444# a_48_532# VSUBS nfet_06v0_dss d_sab=3.78u ad=0.14364n pd=83.56u as=10.64p ps=76.56u w=38u l=0.28u
+X1 a_2366_532# a_2080_444# a_436_532# VSUBS nfet_06v0_dss d_sab=0.28u ad=10.64p pd=76.56u as=0.14364n ps=83.56u w=38u l=3.78u
 .ends
 
 .subckt comp018green_out_paddrv_4T_NMOS_GROUP GR_NMOS_4T_0/w_n1730_n583# a_7847_1028#
@@ -228,31 +228,28 @@ X6 Z a_1561_310# DVDD DVDD pfet_06v0 ad=0.78p pd=3.52u as=1.32p ps=6.88u w=3u l=
 X7 DVDD a_1561_310# Z DVDD pfet_06v0 ad=0.78p pd=3.52u as=0.78p ps=3.52u w=3u l=0.7u
 .ends
 
-.subckt comp018green_in_drv DVDD A DVSS VDD VSS Z a_2771_580# a_1167_270# w_2679_1281#
-+ a_923_1522# a_3067_747#
-X0 VSS A a_n180_263# VSS nfet_06v0 ad=1.04p pd=4.52u as=1.76p ps=8.88u w=4u l=0.7u
-X1 a_n180_263# A VSS VSS nfet_06v0 ad=1.76p pd=8.88u as=1.04p ps=4.52u w=4u l=0.7u
-X2 Z a_n180_263# a_1167_270# VSS nfet_06v0 ad=0.325p pd=1.77u as=0.55p ps=3.38u w=1.25u l=0.7u
-V0 VDD DVDD 0.0
-V1 VSS DVSS 0.0
-X3 a_1167_270# a_n180_263# Z VSS nfet_06v0 ad=0.55p pd=3.38u as=0.325p ps=1.77u w=1.25u l=0.7u
-X4 w_2679_1281# Z a_3067_747# w_2679_1281# pfet_03v3 ad=0.378p pd=1.94u as=0.378p ps=1.94u w=1.4u l=0.28u
-X5 a_923_1522# a_n180_263# Z VDD pfet_06v0 ad=0.65p pd=3.02u as=0.65p ps=3.02u w=2.5u l=0.7u
-X6 a_2771_580# Z a_3067_747# a_2771_580# nfet_03v3 ad=0.162p pd=1.14u as=0.162p ps=1.14u w=0.6u l=0.28u
-X7 a_3067_747# Z w_2679_1281# w_2679_1281# pfet_03v3 ad=0.378p pd=1.94u as=0.644p ps=3.72u w=1.4u l=0.28u
-X8 a_3067_747# Z a_2771_580# a_2771_580# nfet_03v3 ad=0.162p pd=1.14u as=0.276p ps=2.12u w=0.6u l=0.28u
-X9 a_3067_747# Z a_2771_580# a_2771_580# nfet_03v3 ad=0.162p pd=1.14u as=0.162p ps=1.14u w=0.6u l=0.28u
-X10 a_3067_747# Z a_2771_580# a_2771_580# nfet_03v3 ad=0.162p pd=1.14u as=0.162p ps=1.14u w=0.6u l=0.28u
-X11 a_2771_580# Z a_3067_747# a_2771_580# nfet_03v3 ad=0.276p pd=2.12u as=0.162p ps=1.14u w=0.6u l=0.28u
-X12 a_2771_580# Z a_3067_747# a_2771_580# nfet_03v3 ad=0.162p pd=1.14u as=0.162p ps=1.14u w=0.6u l=0.28u
-X13 Z a_n180_263# a_923_1522# VDD pfet_06v0 ad=0.65p pd=3.02u as=0.65p ps=3.02u w=2.5u l=0.7u
-X14 w_2679_1281# Z a_3067_747# w_2679_1281# pfet_03v3 ad=0.644p pd=3.72u as=0.378p ps=1.94u w=1.4u l=0.28u
-X15 a_n180_263# A VDD VDD pfet_06v0 ad=0.88p pd=4.88u as=0.88p ps=4.88u w=2u l=0.7u
-X16 a_3067_747# Z w_2679_1281# w_2679_1281# pfet_03v3 ad=0.378p pd=1.94u as=0.378p ps=1.94u w=1.4u l=0.28u
-X17 a_923_1522# a_n180_263# Z VDD pfet_06v0 ad=1.1p pd=5.88u as=0.65p ps=3.02u w=2.5u l=0.7u
-X18 w_2679_1281# Z a_3067_747# w_2679_1281# pfet_03v3 ad=0.378p pd=1.94u as=0.378p ps=1.94u w=1.4u l=0.28u
-X19 a_3067_747# Z w_2679_1281# w_2679_1281# pfet_03v3 ad=0.378p pd=1.94u as=0.378p ps=1.94u w=1.4u l=0.28u
-X20 Z a_n180_263# a_923_1522# VDD pfet_06v0 ad=0.65p pd=3.02u as=1.1p ps=5.88u w=2.5u l=0.7u
+.subckt comp018green_in_drv DVDD A DVSS VDD VSS Z a_1167_270# a_923_1522# a_3067_747#
+X0 DVSS A a_n180_263# DVSS nfet_06v0 ad=1.04p pd=4.52u as=1.76p ps=8.88u w=4u l=0.7u
+X1 a_n180_263# A DVSS DVSS nfet_06v0 ad=1.76p pd=8.88u as=1.04p ps=4.52u w=4u l=0.7u
+X2 Z a_n180_263# a_1167_270# DVSS nfet_06v0 ad=0.325p pd=1.77u as=0.55p ps=3.38u w=1.25u l=0.7u
+X3 a_1167_270# a_n180_263# Z DVSS nfet_06v0 ad=0.55p pd=3.38u as=0.325p ps=1.77u w=1.25u l=0.7u
+X4 VDD Z a_3067_747# VDD pfet_03v3 ad=0.378p pd=1.94u as=0.378p ps=1.94u w=1.4u l=0.28u
+X5 a_923_1522# a_n180_263# Z DVDD pfet_06v0 ad=0.65p pd=3.02u as=0.65p ps=3.02u w=2.5u l=0.7u
+X6 VSS Z a_3067_747# VSS nfet_03v3 ad=0.162p pd=1.14u as=0.162p ps=1.14u w=0.6u l=0.28u
+X7 a_3067_747# Z VDD VDD pfet_03v3 ad=0.378p pd=1.94u as=0.644p ps=3.72u w=1.4u l=0.28u
+X8 a_3067_747# Z VSS VSS nfet_03v3 ad=0.162p pd=1.14u as=0.276p ps=2.12u w=0.6u l=0.28u
+X9 a_3067_747# Z VSS VSS nfet_03v3 ad=0.162p pd=1.14u as=0.162p ps=1.14u w=0.6u l=0.28u
+X10 a_3067_747# Z VSS VSS nfet_03v3 ad=0.162p pd=1.14u as=0.162p ps=1.14u w=0.6u l=0.28u
+X11 VSS Z a_3067_747# VSS nfet_03v3 ad=0.276p pd=2.12u as=0.162p ps=1.14u w=0.6u l=0.28u
+X12 VSS Z a_3067_747# VSS nfet_03v3 ad=0.162p pd=1.14u as=0.162p ps=1.14u w=0.6u l=0.28u
+X13 Z a_n180_263# a_923_1522# DVDD pfet_06v0 ad=0.65p pd=3.02u as=0.65p ps=3.02u w=2.5u l=0.7u
+X14 VDD Z a_3067_747# VDD pfet_03v3 ad=0.644p pd=3.72u as=0.378p ps=1.94u w=1.4u l=0.28u
+X15 a_n180_263# A DVDD DVDD pfet_06v0 ad=0.88p pd=4.88u as=0.88p ps=4.88u w=2u l=0.7u
+X16 a_3067_747# Z VDD VDD pfet_03v3 ad=0.378p pd=1.94u as=0.378p ps=1.94u w=1.4u l=0.28u
+X17 a_923_1522# a_n180_263# Z DVDD pfet_06v0 ad=1.1p pd=5.88u as=0.65p ps=3.02u w=2.5u l=0.7u
+X18 VDD Z a_3067_747# VDD pfet_03v3 ad=0.378p pd=1.94u as=0.378p ps=1.94u w=1.4u l=0.28u
+X19 a_3067_747# Z VDD VDD pfet_03v3 ad=0.378p pd=1.94u as=0.378p ps=1.94u w=1.4u l=0.28u
+X20 Z a_n180_263# a_923_1522# DVDD pfet_06v0 ad=0.65p pd=3.02u as=1.1p ps=5.88u w=2.5u l=0.7u
 .ends
 
 .subckt comp018green_in_cms_smt IE CS DVDD A DVSS Z a_5355_608# m2_5364_1052#
@@ -295,8 +292,8 @@ X33 DVSS IE a_1887_280# DVSS nfet_06v0 ad=0.832p pd=3.72u as=0.832p ps=3.72u w=3
 .subckt comp018green_inpath_cms_smt PAD CS PU comp018green_in_cms_smt_0/a_5355_608#
 + a_1390_1224# comp018green_in_logic_pupd_0/a_1648_203# comp018green_in_pupd_0/w_n83_53#
 + comp018green_in_pupd_0/A m3_9619_4882# m3_9619_3696# comp018green_in_pupd_0/DVSS
-+ comp018green_in_pupd_0/DVDD comp018green_in_drv_0/VDD comp018green_in_drv_0/VSS
-+ m1_12910_4326# VSUBS m1_10570_5335# a_1390_2124# w_n13_970# comp018green_sigbuf_3/DVSS
++ comp018green_in_pupd_0/DVDD comp018green_in_drv_0/DVDD comp018green_in_drv_0/DVSS
++ m1_12910_4326# VSUBS comp018green_in_drv_0/VDD a_1390_2124# w_n13_970# comp018green_sigbuf_3/DVSS
 + comp018green_sigbuf_3/DVDD
 Xlv_inv_14 w_n13_970# comp018green_sigbuf_1/IN a_1390_1224# VSUBS lv_inv
 Xlv_inv_15 w_n13_970# comp018green_sigbuf_1/INB comp018green_sigbuf_1/IN VSUBS lv_inv
@@ -316,11 +313,11 @@ Xcomp018green_sigbuf_2 comp018green_sigbuf_2/Z comp018green_sigbuf_3/DVSS comp01
 + comp018green_sigbuf_2/ZB comp018green_sigbuf_2/INB comp018green_sigbuf_2/IN comp018green_sigbuf
 Xcomp018green_sigbuf_3 comp018green_sigbuf_3/Z comp018green_sigbuf_3/DVSS comp018green_sigbuf_3/DVDD
 + comp018green_sigbuf_3/ZB comp018green_sigbuf_3/INB comp018green_sigbuf_3/IN comp018green_sigbuf
-Xcomp018green_in_drv_0 comp018green_in_drv_0/VDD comp018green_in_drv_0/A comp018green_in_drv_0/VSS
-+ comp018green_in_drv_0/VDD comp018green_in_drv_0/VSS comp018green_in_drv_0/Z VSUBS
-+ VSUBS m1_10570_5335# m1_10570_5335# m1_12910_4326# comp018green_in_drv
-Xcomp018green_in_cms_smt_0 comp018green_sigbuf_1/Z comp018green_sigbuf_3/Z comp018green_in_drv_0/VDD
-+ PAD comp018green_in_drv_0/VSS comp018green_in_drv_0/A comp018green_in_cms_smt_0/a_5355_608#
+Xcomp018green_in_drv_0 comp018green_in_drv_0/DVDD comp018green_in_drv_0/A comp018green_in_drv_0/DVSS
++ comp018green_in_drv_0/VDD VSUBS comp018green_in_drv_0/Z VSUBS comp018green_in_drv_0/VDD
++ m1_12910_4326# comp018green_in_drv
+Xcomp018green_in_cms_smt_0 comp018green_sigbuf_1/Z comp018green_sigbuf_3/Z comp018green_in_drv_0/DVDD
++ PAD comp018green_in_drv_0/DVSS comp018green_in_drv_0/A comp018green_in_cms_smt_0/a_5355_608#
 + PAD comp018green_in_cms_smt
 D0 CS w_n13_970# diode_pd2nw_03v3 pj=4u area=1p
 D1 a_1390_1224# w_n13_970# diode_pd2nw_03v3 pj=4u area=1p
@@ -353,10 +350,10 @@ D3 IP_IN w_454_3720# diode_pd2nw_06v0 pj=42u area=20p
 + a_12390_41548# m1_3608_46684# comp018green_esd_cdm_0/DVDD comp018green_inpath_cms_smt_0/comp018green_sigbuf_3/DVDD
 + comp018green_out_paddrv_16T_0/comp018green_out_paddrv_4T_PMOS_GROUP_0/PMOS_4T_metal_stack_3/m1_n44_0#
 + comp018green_sigbuf_1_0/VSUBS comp018green_sigbuf_1_0/DVSS comp018green_esd_cdm_0/DVSS
-+ comp018green_sigbuf_1_0/DVDD comp018green_inpath_cms_smt_0/comp018green_in_drv_0/VDD
-+ a_882_55933# comp018green_inpath_cms_smt_0/m1_10570_5335# comp018green_inpath_cms_smt_0/VSUBS
++ comp018green_sigbuf_1_0/DVDD comp018green_inpath_cms_smt_0/comp018green_in_drv_0/DVDD
++ a_882_55933# comp018green_inpath_cms_smt_0/comp018green_in_drv_0/VDD comp018green_inpath_cms_smt_0/VSUBS
 + w_11042_41027# comp018green_out_paddrv_16T_0/comp018green_out_paddrv_4T_NMOS_GROUP_0/VSUBS
-+ comp018green_out_predrv_3/DVDD a_13720_39292# comp018green_inpath_cms_smt_0/comp018green_in_drv_0/VSS
++ comp018green_out_predrv_3/DVDD a_13720_39292# comp018green_inpath_cms_smt_0/comp018green_sigbuf_3/DVSS
 Xlv_nand_2 comp018green_sigbuf_1_0/VSUBS a_13720_39292# OE m1_5236_36986# a_13720_39292#
 + lv_nand
 Xlv_nand_3 comp018green_sigbuf_1_0/VSUBS a_13720_39292# OE m1_4812_38523# PDRV1 lv_nand
@@ -395,12 +392,12 @@ Xcomp018green_out_predrv_3 comp018green_sigbuf_1_0/Z comp018green_sigbuf_1_0/ZB 
 + comp018green_out_predrv_3/ENB comp018green_sigbuf_1_0/DVSS comp018green_out_predrv_3/A
 + comp018green_out_predrv_3/DVDD ndrive_Y_<1> pdrive_y_<1> pdrive_x_<1> comp018green_out_predrv_3/EN
 + comp018green_out_predrv
-Xcomp018green_inpath_cms_smt_0 comp018green_esd_cdm_0/IP_IN CS PU comp018green_inpath_cms_smt_0/comp018green_in_drv_0/VDD
+Xcomp018green_inpath_cms_smt_0 comp018green_esd_cdm_0/IP_IN CS PU comp018green_inpath_cms_smt_0/comp018green_in_drv_0/DVDD
 + IE w_11000_43887# m1_3608_46684# comp018green_esd_cdm_0/IP_IN comp018green_inpath_cms_smt_0/m3_9619_4882#
-+ comp018green_inpath_cms_smt_0/m3_9619_3696# comp018green_esd_cdm_0/DVSS comp018green_inpath_cms_smt_0/comp018green_in_drv_0/VDD
-+ comp018green_inpath_cms_smt_0/comp018green_in_drv_0/VDD comp018green_inpath_cms_smt_0/comp018green_in_drv_0/VSS
-+ Y comp018green_inpath_cms_smt_0/VSUBS comp018green_inpath_cms_smt_0/m1_10570_5335#
-+ PD w_835_53274# comp018green_inpath_cms_smt_0/comp018green_in_drv_0/VSS comp018green_inpath_cms_smt_0/comp018green_sigbuf_3/DVDD
++ comp018green_inpath_cms_smt_0/m3_9619_3696# comp018green_esd_cdm_0/DVSS comp018green_inpath_cms_smt_0/comp018green_in_drv_0/DVDD
++ comp018green_inpath_cms_smt_0/comp018green_in_drv_0/DVDD comp018green_inpath_cms_smt_0/comp018green_sigbuf_3/DVSS
++ Y comp018green_inpath_cms_smt_0/VSUBS comp018green_inpath_cms_smt_0/comp018green_in_drv_0/VDD
++ PD w_835_53274# comp018green_inpath_cms_smt_0/comp018green_sigbuf_3/DVSS comp018green_inpath_cms_smt_0/comp018green_sigbuf_3/DVDD
 + comp018green_inpath_cms_smt
 Xcomp018green_out_sigbuf_oe_2 comp018green_out_predrv_1/ENB comp018green_sigbuf_1_0/DVDD
 + comp018green_sigbuf_1_0/DVSS comp018green_out_predrv_1/EN m1_5236_36986# m1_5084_37107#
@@ -420,22 +417,22 @@ Xlv_inv_4 a_13720_39292# m1_9774_36986# SL comp018green_sigbuf_1_0/VSUBS lv_inv
 Xlv_inv_6 a_13720_39292# m1_5084_37107# m1_5236_36986# comp018green_sigbuf_1_0/VSUBS
 + lv_inv
 Xcomp018green_esd_cdm_0 comp018green_esd_cdm_0/IP_IN PAD comp018green_esd_cdm_0/DVDD
-+ comp018green_esd_cdm_0/DVSS comp018green_inpath_cms_smt_0/comp018green_in_drv_0/VDD
++ comp018green_esd_cdm_0/DVSS comp018green_inpath_cms_smt_0/comp018green_in_drv_0/DVDD
 + comp018green_esd_cdm_0/w_454_3720# comp018green_esd_cdm
 Xlv_nand_0 comp018green_sigbuf_1_0/VSUBS a_13720_39292# OE m1_9178_38525# A lv_nand
 Xlv_nand_1 comp018green_sigbuf_1_0/VSUBS a_13720_39292# OE m1_1184_38534# PDRV0 lv_nand
-X0 comp018green_out_predrv_3/DVDD comp018green_inpath_cms_smt_0/comp018green_in_drv_0/VSS cap_nmos_06v0 c_width=5u c_length=1.5u
-X1 comp018green_out_predrv_3/DVDD comp018green_inpath_cms_smt_0/comp018green_in_drv_0/VSS cap_nmos_06v0 c_width=5u c_length=1.5u
-X2 comp018green_out_predrv_3/DVDD comp018green_inpath_cms_smt_0/comp018green_in_drv_0/VSS cap_nmos_06v0 c_width=5u c_length=1.5u
-X3 a_882_55933# comp018green_inpath_cms_smt_0/comp018green_in_drv_0/VSS cap_nmos_06v0 c_width=5u c_length=1.5u
-X4 a_882_55933# comp018green_inpath_cms_smt_0/comp018green_in_drv_0/VSS cap_nmos_06v0 c_width=5u c_length=1.5u
+X0 comp018green_out_predrv_3/DVDD comp018green_inpath_cms_smt_0/comp018green_sigbuf_3/DVSS cap_nmos_06v0 c_width=5u c_length=1.5u
+X1 comp018green_out_predrv_3/DVDD comp018green_inpath_cms_smt_0/comp018green_sigbuf_3/DVSS cap_nmos_06v0 c_width=5u c_length=1.5u
+X2 comp018green_out_predrv_3/DVDD comp018green_inpath_cms_smt_0/comp018green_sigbuf_3/DVSS cap_nmos_06v0 c_width=5u c_length=1.5u
+X3 a_882_55933# comp018green_inpath_cms_smt_0/comp018green_sigbuf_3/DVSS cap_nmos_06v0 c_width=5u c_length=1.5u
+X4 a_882_55933# comp018green_inpath_cms_smt_0/comp018green_sigbuf_3/DVSS cap_nmos_06v0 c_width=5u c_length=1.5u
 X5 a_12390_41548# comp018green_esd_cdm_0/DVSS cap_nmos_06v0 c_width=3u c_length=3u
-X6 comp018green_out_predrv_3/DVDD comp018green_inpath_cms_smt_0/comp018green_in_drv_0/VSS cap_nmos_06v0 c_width=5u c_length=1.5u
-X7 comp018green_out_predrv_3/DVDD comp018green_inpath_cms_smt_0/comp018green_in_drv_0/VSS cap_nmos_06v0 c_width=5u c_length=1.5u
+X6 comp018green_out_predrv_3/DVDD comp018green_inpath_cms_smt_0/comp018green_sigbuf_3/DVSS cap_nmos_06v0 c_width=5u c_length=1.5u
+X7 comp018green_out_predrv_3/DVDD comp018green_inpath_cms_smt_0/comp018green_sigbuf_3/DVSS cap_nmos_06v0 c_width=5u c_length=1.5u
 X8 a_12390_41548# comp018green_esd_cdm_0/DVSS cap_nmos_06v0 c_width=3u c_length=3u
-X9 comp018green_out_predrv_3/DVDD comp018green_inpath_cms_smt_0/comp018green_in_drv_0/VSS cap_nmos_06v0 c_width=5u c_length=1.5u
+X9 comp018green_out_predrv_3/DVDD comp018green_inpath_cms_smt_0/comp018green_sigbuf_3/DVSS cap_nmos_06v0 c_width=5u c_length=1.5u
 X10 a_12390_41548# comp018green_esd_cdm_0/DVSS cap_nmos_06v0 c_width=3u c_length=3u
-X11 comp018green_out_predrv_3/DVDD comp018green_inpath_cms_smt_0/comp018green_in_drv_0/VSS cap_nmos_06v0 c_width=5u c_length=1.5u
+X11 comp018green_out_predrv_3/DVDD comp018green_inpath_cms_smt_0/comp018green_sigbuf_3/DVSS cap_nmos_06v0 c_width=5u c_length=1.5u
 D0 comp018green_inpath_cms_smt_0/VSUBS OE diode_pd2nw_03v3 pj=1.92u area=0.2304p
 D1 comp018green_inpath_cms_smt_0/VSUBS OE diode_pd2nw_03v3 pj=1.92u area=0.2304p
 D2 comp018green_inpath_cms_smt_0/VSUBS OE diode_pd2nw_03v3 pj=1.92u area=0.2304p
@@ -445,7 +442,7 @@ D5 SL w_11042_41027# diode_pd2nw_03v3 pj=4u area=1p
 X12 a_12390_41548# comp018green_esd_cdm_0/DVSS cap_nmos_06v0 c_width=3u c_length=3u
 D6 comp018green_inpath_cms_smt_0/VSUBS PDRV0 diode_pd2nw_03v3 pj=1.92u area=0.2304p
 D7 comp018green_inpath_cms_smt_0/VSUBS PDRV1 diode_pd2nw_03v3 pj=1.92u area=0.2304p
-X13 comp018green_out_predrv_3/DVDD comp018green_inpath_cms_smt_0/comp018green_in_drv_0/VSS cap_nmos_06v0 c_width=5u c_length=1.5u
+X13 comp018green_out_predrv_3/DVDD comp018green_inpath_cms_smt_0/comp018green_sigbuf_3/DVSS cap_nmos_06v0 c_width=5u c_length=1.5u
 .ends
 
 .subckt gf180mcu_ocd_io__bi_t A CS DVDD DVSS IE OE PAD PD PDRV0 PDRV1 PU SL VDD VSS
