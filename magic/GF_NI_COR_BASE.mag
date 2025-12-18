@@ -1,7 +1,7 @@
 magic
 tech gf180mcuD
 magscale 1 10
-timestamp 1764351143
+timestamp 1766072706
 << isosubstrate >>
 rect 13458 69312 69613 70630
 rect 13458 56958 70557 69312
@@ -3520,10 +3520,14 @@ rect 41230 69040 41920 69720
 rect 39940 67850 40460 68400
 rect 67990 40330 68400 40820
 rect 69180 40330 69680 40850
-use ESD_CLAMP_COR  ESD_CLAMP_COR_0
-timestamp 1764351126
-transform 1 0 13500 0 1 13500
-box 0 0 57389 57390
+use comp018green_esd_clamp_v5p0_1  comp018green_esd_clamp_v5p0_1_0
+timestamp 1764347740
+transform 1 0 57064 0 1 13551
+box -4188 -51 13013 56967
+use comp018green_esd_clamp_v5p0_2  comp018green_esd_clamp_v5p0_2_0
+timestamp 1764347740
+transform 0 1 13551 1 0 57065
+box -407 -51 13369 47415
 use moscap_corner  moscap_corner_0
 timestamp 1764347740
 transform 1 0 59877 0 1 56727
@@ -3536,13 +3540,13 @@ use moscap_corner  moscap_corner_1
 timestamp 1764347740
 transform 1 0 45978 0 1 16351
 box 32 32 10576 12320
-use moscap_corner  moscap_corner_2
-timestamp 1764347740
-transform 1 0 45978 0 1 28703
-box 32 32 10576 12320
 use moscap_corner_2  moscap_corner_2_0
 timestamp 1764347740
 transform 1 0 25298 0 1 28703
+box 32 32 10576 12320
+use moscap_corner  moscap_corner_2
+timestamp 1764347740
+transform 1 0 45978 0 1 28703
 box 32 32 10576 12320
 use moscap_corner  moscap_corner_3
 timestamp 1764347740
@@ -3568,11 +3572,21 @@ use moscap_routing  moscap_routing_0
 timestamp 1764350025
 transform 1 0 60556 0 1 68904
 box -47022 -55377 9837 76
+use power_via_cor_3  power_via_cor_3_0
+timestamp 1764351105
+transform 1 0 56056 0 1 14008
+box 1094 35210 14833 56443
+use power_via_cor_5  power_via_cor_5_0
+timestamp 1764350836
+transform 0 1 14008 1 0 56057
+box 1068 32 14833 50982
 << labels >>
-rlabel metal3 s 18632 70151 18632 70151 4 DVSS
-port 1 nsew
 rlabel metal2 69420 40560 69420 40560 0 VSS
+port 1 nsew
 rlabel metal2 67990 40330 68400 40820 0 VDD
+port 2 nsew
 rlabel metal2 41230 69040 41920 69720 0 DVSS
+port 3 nsew
 rlabel metal2 39940 67850 40460 68400 0 DVDD
+port 4 nsew
 << end >>

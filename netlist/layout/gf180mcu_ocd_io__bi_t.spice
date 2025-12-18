@@ -57,8 +57,8 @@ Xcomp018green_out_drv_pleg_4T_X_3 a_2360_2800# w_n5_111# PMOS_4T_metal_stack_1/m
 
 .subckt comp018green_out_drv_nleg_4T a_206_444# a_2080_444# a_2366_532# a_48_532#
 + a_436_532# VSUBS
-X0 a_436_532# a_206_444# a_48_532# VSUBS nfet_06v0_dss d_sab=3.78u ad=0.14364n pd=83.56u as=10.64p ps=76.56u w=38u l=0.28u
-X1 a_2366_532# a_2080_444# a_436_532# VSUBS nfet_06v0_dss d_sab=0.28u ad=10.64p pd=76.56u as=0.14364n ps=83.56u w=38u l=3.78u
+X0 a_436_532# a_206_444# a_48_532# VSUBS nfet_06v0_dss d_sab=3.78u s_sab=0.28u ad=0.14364n pd=83.56u as=10.64p ps=76.56u w=38u l=1.15u
+X1 a_2366_532# a_2080_444# a_436_532# VSUBS nfet_06v0_dss d_sab=0.28u s_sab=3.78u ad=10.64p pd=76.56u as=0.14364n ps=83.56u w=38u l=1.15u
 .ends
 
 .subckt comp018green_out_paddrv_4T_NMOS_GROUP GR_NMOS_4T_0/w_n1730_n583# a_7847_1028#

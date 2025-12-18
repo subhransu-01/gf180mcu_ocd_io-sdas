@@ -1,11 +1,11 @@
-**************************************
-gf180mcu_fd_io 5V Inline non-CUP GPIO
-**************************************
+******************************************************
+gf180mcu_ocd_io 5V pad / 3.3V core Inline non-CUP GPIO
+******************************************************
 
 .. centered::
-   **GlobalFoundries 0.18µm Green Process**
+   **Open Circuit Design 0.18µm **
 .. centered::
-   **5V Wide-Range Inline non-CUP GPIO Library**
+   **5V pad / 3.3V core Wide-Range Inline non-CUP GPIO Library**
 .. centered::
    **Datasheet**
 
