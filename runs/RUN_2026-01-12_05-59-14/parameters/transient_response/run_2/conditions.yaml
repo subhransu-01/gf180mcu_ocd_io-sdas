@@ -1,0 +1,8 @@
+DUT_path: /home/subhransu/gitRepo/gf180mcu_ocd_io-sdas/netlist/schematic/io_inv_1.spice
+N: 2
+Tmax: '5.0000000000000004e-08'
+filename: io_inv_1_tran
+iterations: '0'
+seed: '12345'
+simpath: /home/subhransu/gitRepo/gf180mcu_ocd_io-sdas/runs/RUN_2026-01-12_05-59-14/parameters/transient_response/run_2
+temperature: '130'

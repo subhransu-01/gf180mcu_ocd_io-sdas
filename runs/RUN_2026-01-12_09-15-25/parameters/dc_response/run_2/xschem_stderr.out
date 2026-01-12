@@ -1,0 +1,15 @@
+Using run time directory XSCHEM_SHAREDIR = /home/subhransu/cad/eda-xschem/glnxa64/share/xschem
+Sourcing /home/subhransu/cad/eda-xschem/glnxa64/share/xschem/xschemrc init file
+Sourcing /home/subhransu/share/pdk/gf180mcuD/libs.tech/xschem/xschemrc init file
+pdk installation: using /home/subhransu/share/pdk
+180MCU_MODELS: /home/subhransu/share/pdk/gf180mcuD/libs.tech/ngspice
+setup_tcp_bespice: success : listening to TCP port: 2022
+-----------/home/subhransu/gitRepo/gf180mcu_ocd_io-sdas/runs/RUN_2026-01-12_09-15-25/parameters/dc_response/run_2/io_inv_1_dc.sch
+Warning: open net: VDD
+Warning: open net: VSS
+Warning: open net: Vin
+Warning: open net: #net1
+Warning: open net: #net2
+Error: undriven node: #net3
+Warning: open net: #net4
+-----------/home/subhransu/gitRepo/gf180mcu_ocd_io-sdas/runs/RUN_2026-01-12_09-15-25/parameters/dc_response/run_2/io_inv_1_dc.sch
