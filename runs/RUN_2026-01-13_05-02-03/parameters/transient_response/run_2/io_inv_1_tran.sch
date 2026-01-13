@@ -29,7 +29,7 @@ value="
 .lib $::180MCU_MODELS/sm141064.ngspice typical
 "}
 C {vsource.sym} 1070 -290 0 0 {name=V1 value=0 savecurrent=false}
-C {vsource.sym} 1170 -290 0 0 {name=V2 value=CACE\{vdd\} savecurrent=false}
+C {vsource.sym} 1170 -290 0 0 {name=V2 value=1.8 savecurrent=false}
 C {gnd.sym} 1070 -150 0 0 {name=l1 lab=GND}
 C {lab_wire.sym} 1070 -350 0 0 {name=p1 sig_type=std_logic lab=VSS}
 C {lab_wire.sym} 1170 -350 0 0 {name=p2 sig_type=std_logic lab=VDD}
@@ -43,9 +43,9 @@ C {simulator_commands_shown.sym} 1840 -320 0 0 {name=SETUP
 simulator=ngspice
 only_toplevel=false 
 value="
-.include CACE\{DUT_path\}
-.temp CACE\{temperature\}
-.option SEED=CACE[CACE\{seed=12345\} + CACE\{iterations=0\}]
+.include /home/subhransu/gitRepo/gf180mcu_ocd_io-sdas/netlist/schematic/io_inv_1.spice
+.temp 130
+.option SEED=12345
 .option warn=1
 "}
 C {simulator_commands_shown.sym} 1840 -140 0 0 {name=CONTROL
@@ -53,15 +53,15 @@ simulator=ngspice
 only_toplevel=false 
 value="
 .control
-tran 0.1n CACE\{Tmax\}
+tran 0.1n 5.0000000000000004e-08
 set wr_singlescale
-wrdata CACE\{simpath\}/CACE\{filename\}_CACE\{N\}.data V(IN) V(OUT)
+wrdata /home/subhransu/gitRepo/gf180mcu_ocd_io-sdas/runs/RUN_2026-01-13_05-02-03/parameters/transient_response/run_2/io_inv_1_tran_2.data V(IN) V(OUT)
 .endc
 "}
 C {lab_wire.sym} 1770 -410 0 0 {name=p7 sig_type=std_logic lab=OUT}
 C {capa.sym} 1730 -350 0 0 {name=C1
 m=1
-value=CACE\{cl\}
+value=1e-15
 footprint=1206
 device="ceramic capacitor"}
 C {gnd.sym} 1730 -290 0 0 {name=l3 lab=GND}

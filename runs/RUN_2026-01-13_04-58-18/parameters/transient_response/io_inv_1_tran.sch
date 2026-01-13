@@ -12,7 +12,7 @@ N 1170 -350 1170 -320 {lab=VDD}
 N 1450 -410 1490 -410 {lab=IN}
 N 1510 -480 1550 -480 {lab=VDD}
 N 1510 -340 1550 -340 {lab=VSS}
-N 1290 -350 1290 -320 {lab=IN}
+N 1290 -350 1290 -320 {lab=Vin}
 N 1290 -260 1290 -200 {lab=GND}
 N 1660 -410 1730 -410 {lab=OUT}
 N 1730 -410 1730 -380 {lab=OUT}
@@ -55,7 +55,7 @@ value="
 .control
 tran 0.1n CACE\{Tmax\}
 set wr_singlescale
-wrdata CACE\{simpath\}/CACE\{filename\}_CACE\{N\}.data V(IN) V(OUT)
+wrdata CACE\{simpath\}/CACE\{filename\}_CACE\{N\}.data V(Vin) V(Vout)
 .endc
 "}
 C {lab_wire.sym} 1770 -410 0 0 {name=p7 sig_type=std_logic lab=OUT}
