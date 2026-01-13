@@ -103,9 +103,7 @@ parameters:
         typical: 27
         maximum: 130  
       corner:
-        minimum: ss
-        typical: tt
-        maximum: ff
+        enumerate: [tt, ff, ss, fs, sf] 
 
   dc_response:
     description: DC response
@@ -138,6 +136,4 @@ parameters:
         typical: 27
         maximum: 130
       corner:
-        minimum: ss
-        typical: tt
-        maximum: ff
+        enumerate: [tt, ff, ss, fs, sf]
