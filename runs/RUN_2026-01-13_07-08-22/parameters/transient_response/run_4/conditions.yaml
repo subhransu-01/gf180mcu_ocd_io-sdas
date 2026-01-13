@@ -1,0 +1,13 @@
+DUT_path: /home/subhransu/gitRepo/gf180mcu_ocd_io-sdas/netlist/schematic/io_inv_1.spice
+N: 4
+PDK: gf180mcuD
+PDK_ROOT: /home/subhransu/share/pdk
+Tmax: '5.0000000000000004e-08'
+cl: 1e-15
+corner: tt
+filename: io_inv_1_tran
+iterations: '0'
+seed: '12345'
+simpath: /home/subhransu/gitRepo/gf180mcu_ocd_io-sdas/runs/RUN_2026-01-13_07-08-22/parameters/transient_response/run_4
+temperature: '27'
+vdd: '1.8'

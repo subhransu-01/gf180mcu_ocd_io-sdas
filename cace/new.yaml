@@ -1,0 +1,42 @@
+  transient_response:
+    description: Transient response
+    display: Transient response
+    status: skip
+    unit: mV
+    tool:
+      ngspice:
+        template: io_inv_1_tran.sch
+        format: ascii
+        suffix: .data
+        variables: [time, Vout, Vin]
+        jobs: 4
+    plot:
+      transient:
+        suffix: .svg
+        xaxis: time
+        yaxis: [Vout, Vin]
+    variables:
+      time:
+        display: Time
+        unit: ms
+      Vin:
+        display: Vin
+        unit: V
+      Vout:
+        display: Vout
+        unit: V
+    conditions:
+      Tmax:
+        display: Simulation time
+        unit: ns
+        typical: 50
+      temperature:
+        minimum: -40
+        typical: 27
+        maximum: 130  
+      corner:
+        minimum: ss
+        typical: tt
+        maximum: ff
+
+
