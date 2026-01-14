@@ -66,25 +66,27 @@ default_conditions:
     typical: 27
 
 parameters:
- dc_response:
-    description: DC response
-    display: DC response
+  transient_response:
+    description: Transient response
+    display: Transient response
     status: skip
-    unit: V
+    unit: mV
     tool:
-       ngspice:
-        template: io_inv_1_dc.sch
+      ngspice:
+        template: io_inv_1_tran.sch
         format: ascii
         suffix: .data
-        variables: [null, Vin, Vout]
+        variables: [time, Vout, Vin]
         jobs: 4
     plot:
-      dc:
+      transient:
         suffix: .svg
-        xaxis: Vin
-        yaxis: Vout
-
+        xaxis: time
+        yaxis: [Vout, Vin]
     variables:
+      time:
+        display: Time
+        unit: ms
       Vin:
         display: Vin
         unit: V
@@ -92,7 +94,12 @@ parameters:
         display: Vout
         unit: V
     conditions:
+      Tmax:
+        display: Simulation time
+        unit: ns
+        typical: 50
       temperature:
         typical: 27
       corner:
-        typical: tt
+        typical: tt 
+
