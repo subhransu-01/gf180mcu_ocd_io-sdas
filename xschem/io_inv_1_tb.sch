@@ -59,7 +59,7 @@ C {io_inv_1.sym} -290 -50 0 0 {name=x1}
 C {vsource.sym} -700 100 0 0 {name=V1 value=0 savecurrent=false}
 C {vsource.sym} -610 100 0 0 {name=V2 value=1.8 savecurrent=false}
 C {gnd.sym} -700 240 0 0 {name=l1 lab=GND}
-C {vsource.sym} -350 120 0 0 {name=V3 value=1.8 savecurrent=false}
+C {vsource.sym} -350 120 0 0 {name=V3 value="0 PULSE(0 1.8 0 1n 1n 10n 20n)" savecurrent=false}
 C {gnd.sym} -350 210 0 0 {name=l2 lab=GND}
 C {opin.sym} -90 -50 0 0 {name=p1 lab=Vout}
 C {lab_wire.sym} -350 -50 0 0 {name=p2 sig_type=std_logic lab=Vin}
