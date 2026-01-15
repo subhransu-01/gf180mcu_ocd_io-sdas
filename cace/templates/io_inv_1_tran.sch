@@ -56,8 +56,8 @@ value="
 .control
 tran 0.1n CACE\{Tmax\}
 
-meas tran tr1090 TRIG v(Vout) VAL='0.1*CACE\{vdd\} RISE=1 TARG v(Vout) VAL='0.9*CACE\{vdd\} RISE=1
-meas tran tf9010 TRIG v(Vout) VAL='0.9*CACE\{vdd\} FALL=1 TARG v(Vout) VAL='0.1*CACE\{vdd\} FALL=1
+meas tran tr TRIG v(Vout) VAL='0.1*CACE\{vdd\}' RISE=1 TARG v(Vout) VAL='0.9*CACE\{vdd\}' RISE=1
+meas tran tf TRIG v(Vout) VAL='0.9*CACE\{vdd\}' FALL=1 TARG v(Vout) VAL='0.1*CACE\{vdd\}' FALL=1
 
 set wr_singlescale
 

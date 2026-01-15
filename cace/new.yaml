@@ -71,16 +71,20 @@ parameters:
     display: Transient response
     status: skip
     unit: mV
-  spec:
-      tr1090:
+    spec:
+      tr:
         display: Trise
-        description: rise time 
+        description: Rise Time
         unit: ns
-      tf9010:
+          #typical:
+          #value: 5
+      tf:
         display: Tfall
-        description: fall time 
-        unit: ns   
-   tool:
+        description: Fall Time
+        unit: ns 
+          #typical: 
+          #value: 5  
+    tool:
       ngspice:
         template: io_inv_1_tran.sch
         format: ascii
@@ -108,7 +112,7 @@ parameters:
         unit: ns
         typical: 50
       temperature:
-        typical: 27
+        typical: 27  
       corner:
-        typical: tt 
-     
+        typical: tt
+
