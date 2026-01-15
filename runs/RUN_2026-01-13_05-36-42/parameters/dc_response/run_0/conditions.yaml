@@ -1,9 +1,0 @@
-DUT_path: /home/subhransu/gitRepo/gf180mcu_ocd_io-sdas/netlist/schematic/io_inv_1.spice
-N: 0
-cl: 1e-15
-filename: io_inv_1_dc
-iterations: '0'
-seed: '12345'
-simpath: /home/subhransu/gitRepo/gf180mcu_ocd_io-sdas/runs/RUN_2026-01-13_05-36-42/parameters/dc_response/run_0
-temperature: '-40'
-vdd: '1.8'

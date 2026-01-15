@@ -1,5 +1,0 @@
-# Simulation Summary for Transient response
-
-| run | time | Vout | Vin |
-| :-- | ---: | ---: | --: |
-| run_0 | [0.000, 1.000e-12, 2.000e-12, …] | [7.353e-09, 7.353e-09, 7.353e-09, …] | [1.800, 1.800, 1.800, …] |
