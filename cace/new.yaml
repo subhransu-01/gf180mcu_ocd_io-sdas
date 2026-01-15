@@ -92,38 +92,4 @@ parameters:
         typical: 27  
       corner:
         typical: tt
-  
-time_response:
-    description: Time response
-    display: Time response
-    status: skip
-    unit: ns
-    spec:
-      tr:
-        display: Trise
-        description: Rise Time
-        unit: ns
-        minimum:
-          value: any
-        typical:
-          value: any
-        maximum:
-          value: any
-      tf:
-        display: Tfall
-        description: Fall Time
-        unit: ns 
-        minimum:
-          value: any
-        typical:
-          value: any
-        maximum:
-          value: any
-    tool:
-      ngspice:
-        template: io_inv_1_tran.sch
-        format: ascii
-        suffix: .data
-        variables: [time, Vout]
-        jobs: 4
 
