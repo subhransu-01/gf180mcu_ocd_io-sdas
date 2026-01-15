@@ -9,6 +9,10 @@
 
 ## Plots
 
+## dc
+
+![dc](./io_inv_1/schematic/dc.svg)
+
 ## transient
 
 ![transient](./io_inv_1/schematic/transient.svg)

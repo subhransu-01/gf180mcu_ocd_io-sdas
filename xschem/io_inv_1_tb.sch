@@ -49,8 +49,8 @@ value="
 .MEASURE TRAN tf9010 TRIG v(vout) VAL='0.9*PAR_VDD' FALL=1 TARG v(vout) VAL='0.1*PAR_VDD' FALL=1
 
 ** Delay Rise Fall
-*.MEASURE TRAN tdrise TRIG v(vin)  VAL=0.5*PAR_VDD RISE=1 TARG v(vout) VAL=0.5*PAR_VDD RISE=1
-*.MEASURE TRAN tdfall TRIG v(vin)  VAL=0.5*PAR_VDD FALL=1 TARG v(vout) VAL=0.5*PAR_VDD FALL=1
+.MEASURE TRAN tdrise TRIG v(vin)  VAL='0.5*PAR_VDD' RISE=1 TARG v(vout) VAL='0.5*PAR_VDD' RISE=1
+.MEASURE TRAN tdfall TRIG v(vin)  VAL='0.5*PAR_VDD' FALL=1 TARG v(vout) VAL='0.5*PAR_VDD' FALL=1
 .control
 	   save all
 
