@@ -138,6 +138,6 @@ parameters:
         typical: 27
         maximum: 130  
       corner:
-        minimum: ss
+        #minimum: ss
         typical: tt
-        maximum: ff
+        #maximum: ff
