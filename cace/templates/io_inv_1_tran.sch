@@ -56,13 +56,6 @@ value="
 .control
 tran 0.1n CACE\{Tmax\}
 
-meas tran tr1090 TRIG v(Vout) VAL='0.1*CACE\{vdd\}' RISE=1 TARG v(Vout) VAL='0.9*CACE\{vdd\}' RISE=1
-meas tran tf9010 TRIG v(Vout) VAL='0.9*CACE\{vdd\}' FALL=1 TARG v(Vout) VAL='0.1*CACE\{vdd\}' FALL=1
-
-** Delay Rise Fall
-meas tran tdrise TRIG v(vin)  VAL='0.5*CACE\{vdd\}' RISE=1 TARG v(vout) VAL='0.5*CACE\{vdd\}' RISE=1
-meas tran tdfall TRIG v(vin)  VAL='0.5*CACE\{vdd\}' FALL=1 TARG v(vout) VAL='0.5*CACE\{vdd\}' FALL=1
-
 set wr_singlescale
 
 wrdata CACE\{simpath\}/CACE\{filename\}_CACE\{N\}.data V(Vout) V(Vin)

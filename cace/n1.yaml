@@ -65,47 +65,21 @@ default_conditions:
     unit: °C
     typical: 27
 
-parameters: 
-  dc_response:
-    description: DC response
-    display: DC response
-    status: skip
-    unit: V
-    tool:
-       ngspice:
-        template: io_inv_1_dc.sch
-        format: ascii
-        suffix: .data
-        variables: [null, Vin, Vout]
-        jobs: 4
-    plot:
-      dc:
-        suffix: .svg
-        xaxis: Vin
-        yaxis: Vout
-
-    variables:
-      Vin:
-        display: Vin
-        unit: V
-      Vout:
-        display: Vout
-        unit: V
-    conditions:
-      temperature:
-        minimum: -40
-        typical: 27
-        maximum: 130
-      corner:
-        minimum: ss
-        typical: tt
-        maximum: ff
-
+parameters:
   transient_response:
     description: Transient response
     display: Transient response
-    status: skip
-    unit: mV
+    #status: skip
+    #unit: mV
+    spec:
+      tr1090:
+        display: Trise
+        description: rise time 
+        unit: ns
+      tf9010:
+        display: Tfall
+        description: fall time 
+        unit: ns   
     tool:
       ngspice:
         template: io_inv_1_tran.sch
@@ -134,49 +108,6 @@ parameters:
         unit: ns
         typical: 50
       temperature:
-        minimum: -40
         typical: 27
-        maximum: 130  
       corner:
-        minimum: ss
         typical: tt
-        maximum: ff
-
-  time_response:
-    description: Time response
-    display: Time response
-    status: skip
-    unit: ns
-    tool:
-      ngspice:
-        template: io_inv_1_time.sch
-        format: ascii
-        suffix: .data
-        variables: [tr1090, tf9010, tdrise, tdfall]
-        jobs: 4
-    variables:
-      tr1090:
-        display: Time
-        unit: ns
-      tf9010:
-        display: Time
-        unit: ns
-      tdrise:
-        display: Time
-        unit: ns
-      tdfall:
-        display: Time
-        unit: ns    
-    conditions:
-      Tmax:
-        display: Simulation time
-        unit: ns
-        typical: 50
-      temperature:
-        minimum: -40
-        typical: 27
-        maximum: 130  
-      corner:
-        minimum: ss
-        typical: tt
-        maximum: ff

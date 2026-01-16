@@ -29,7 +29,7 @@ value="
 .lib $::180MCU_MODELS/sm141064.ngspice typical
 "}
 C {vsource.sym} 1070 -290 0 0 {name=V1 value=0 savecurrent=false}
-C {vsource.sym} 1170 -290 0 0 {name=V2 value=1.8 savecurrent=false}
+C {vsource.sym} 1170 -290 0 0 {name=V2 value=CACE\{vdd\} savecurrent=false}
 C {gnd.sym} 1070 -150 0 0 {name=l1 lab=GND}
 C {lab_wire.sym} 1070 -350 0 0 {name=p1 sig_type=std_logic lab=VSS}
 C {lab_wire.sym} 1170 -350 0 0 {name=p2 sig_type=std_logic lab=VDD}
@@ -43,10 +43,10 @@ C {simulator_commands_shown.sym} 1840 -320 0 0 {name=SETUP
 simulator=ngspice
 only_toplevel=false 
 value="
-*.lib /home/subhransu/share/pdk/gf180mcuD/libs.tech/ngspice/sm141064.ngspice tt
-.include /home/subhransu/gitRepo/gf180mcu_ocd_io-sdas/netlist/schematic/io_inv_1.spice
-.temp 27
-.option SEED=12345
+*.lib CACE\{PDK_ROOT\}/CACE\{PDK\}/libs.tech/ngspice/sm141064.ngspice CACE\{corner\}
+.include CACE\{DUT_path\}
+.temp CACE\{temperature\}
+.option SEED=CACE[CACE\{seed=12345\} + CACE\{iterations=0\}]
 .option warn=1
 "}
 C {simulator_commands_shown.sym} 1840 -140 0 0 {name=CONTROL
@@ -54,24 +54,24 @@ simulator=ngspice
 only_toplevel=false 
 value="
 .control
-tran 0.1n 5.0000000000000004e-08
+tran 0.1n CACE\{Tmax\}
 
-meas tran tr1090 TRIG v(Vout) VAL='0.1*1.8' RISE=1 TARG v(Vout) VAL='0.9*1.8' RISE=1
-meas tran tf9010 TRIG v(Vout) VAL='0.9*1.8' FALL=1 TARG v(Vout) VAL='0.1*1.8' FALL=1
+meas tran tr1090 TRIG v(Vout) VAL='0.1*CACE\{vdd\}' RISE=1 TARG v(Vout) VAL='0.9*CACE\{vdd\}' RISE=1
+meas tran tf9010 TRIG v(Vout) VAL='0.9*CACE\{vdd\}' FALL=1 TARG v(Vout) VAL='0.1*CACE\{vdd\}' FALL=1
 
 ** Delay Rise Fall
-meas tran tdrise TRIG v(vin)  VAL='0.5*1.8' RISE=1 TARG v(vout) VAL='0.5*1.8' RISE=1
-meas tran tdfall TRIG v(vin)  VAL='0.5*1.8' FALL=1 TARG v(vout) VAL='0.5*1.8' FALL=1
+meas tran tdrise TRIG v(vin)  VAL='0.5*CACE\{vdd\}' RISE=1 TARG v(vout) VAL='0.5*CACE\{vdd\}' RISE=1
+meas tran tdfall TRIG v(vin)  VAL='0.5*CACE\{vdd\}' FALL=1 TARG v(vout) VAL='0.5*CACE\{vdd\}' FALL=1
 
 set wr_singlescale
 
-wrdata /home/subhransu/gitRepo/gf180mcu_ocd_io-sdas/runs/RUN_2026-01-15_18-25-16/parameters/transient_response/run_1/io_inv_1_tran_1.data V(Vout) V(Vin)
+echo $&tr1090 $&tf9010 $&tdrise $&tdfall > CACE\{simpath\}/CACE\{filename\}_CACE\{N\}.data
 .endc
 "}
 C {lab_wire.sym} 1770 -410 0 0 {name=p7 sig_type=std_logic lab=Vout}
 C {capa.sym} 1730 -350 0 0 {name=C1
 m=1
-value=1e-15
+value=CACE\{cl\}
 footprint=1206
 device="ceramic capacitor"}
 C {gnd.sym} 1730 -290 0 0 {name=l3 lab=GND}
