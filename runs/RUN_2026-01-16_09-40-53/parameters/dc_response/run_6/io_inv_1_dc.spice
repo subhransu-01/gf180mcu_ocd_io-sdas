@@ -1,0 +1,35 @@
+** sch_path: /home/subhransu/gitRepo/gf180mcu_ocd_io-sdas/runs/RUN_2026-01-16_09-40-53/parameters/dc_response/run_6/io_inv_1_dc.sch
+**.subckt io_inv_1_dc
+x1 Vin Vout VDD VSS io_inv_1
+V1 VSS GND 0
+V2 VDD GND 1.8
+V3 Vin GND 1.8
+**** begin user architecture code
+
+
+
+*.lib /home/subhransu/share/pdk/gf180mcuD/libs.tech/ngspice/sm141064.ngspice ss
+.include /home/subhransu/gitRepo/gf180mcu_ocd_io-sdas/netlist/schematic/io_inv_1.spice
+.temp 130
+.option SEED=12345
+.option warn=1
+
+
+
+
+
+.control
+dc V3 0 1.8 0.1
+set wr_singlescale
+wrdata /home/subhransu/gitRepo/gf180mcu_ocd_io-sdas/runs/RUN_2026-01-16_09-40-53/parameters/dc_response/run_6/io_inv_1_dc_6.data V(Vin) V(Vout)
+.endc
+
+
+
+.include /home/subhransu/share/pdk/gf180mcuD/libs.tech/ngspice/design.ngspice
+.lib /home/subhransu/share/pdk/gf180mcuD/libs.tech/ngspice/sm141064.ngspice typical
+
+**** end user architecture code
+**.ends
+.GLOBAL GND
+.end
