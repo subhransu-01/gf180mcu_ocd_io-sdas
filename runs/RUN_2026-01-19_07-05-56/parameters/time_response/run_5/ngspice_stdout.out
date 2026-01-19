@@ -1,0 +1,32 @@
+
+Note: No compatibility mode selected!
+
+
+Circuit: ** sch_path: /home/subhransu/gitrepo/gf180mcu_ocd_io-sdas/runs/run_2026-01-19_07-05-56/parameters/time_response/run_5/io_inv_1_time.sch
+
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+
+Initial Transient Solution
+--------------------------
+
+Node                                   Voltage
+----                                   -------
+vout                                       1.8
+vin                                          0
+vss                                          0
+vdd                                        1.8
+v3#branch                                    0
+v2#branch                         -4.27345e-12
+v1#branch                          4.27354e-12
+
+ Reference value :  1.00000e-12
+ Reference value :  2.95000e-09
+ Reference value :  2.64500e-08
+No. of Data Rows : 535
+tr1090              =  1.642771e-10 targ=  1.166541e-08 trig=  1.150113e-08
+tf9010              =  1.213773e-10 targ=  6.856813e-10 trig=  5.643040e-10
+tdrise              =  1.132677e-08 targ=  1.160454e-08 trig=  2.777778e-10
+tdfall              =  -1.111592e-08 targ=  6.063016e-10 trig=  1.172222e-08
+Note: Simulation executed from .control section 
