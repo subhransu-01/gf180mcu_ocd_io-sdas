@@ -1,0 +1,42 @@
+** sch_path: /home/subhransu/gitRepo/gf180mcu_ocd_io-sdas/runs/RUN_2026-01-19_07-19-43/parameters/time_response/run_1/io_inv_1_time.sch
+**.subckt io_inv_1_time
+x1 Vin Vout VDD VSS io_inv_1
+V1 VSS GND 0
+V2 VDD GND 1.8
+V3 Vin GND 0 PULSE(0 1.8 0 1n 1n 10n 20n)
+C1 Vout GND 1e-15 m=1
+**** begin user architecture code
+
+
+
+.include /home/subhransu/share/pdk/gf180mcuD/libs.tech/ngspice/design.ngspice
+.lib /home/subhransu/share/pdk/gf180mcuD/libs.tech/ngspice/sm141064.ngspice typical
+.include /home/subhransu/gitRepo/gf180mcu_ocd_io-sdas/netlist/schematic/io_inv_1.spice
+.temp -40
+.option SEED=12345
+.option warn=1
+
+
+
+
+
+.control
+tran 0.1n 5.0000000000000004e-08
+
+meas tran tr1090 TRIG v(Vout) VAL='0.1*1.8' RISE=1 TARG v(Vout) VAL='0.9*1.8' RISE=1
+meas tran tf9010 TRIG v(Vout) VAL='0.9*1.8' FALL=1 TARG v(Vout) VAL='0.1*1.8' FALL=1
+
+** Delay Rise Fall
+meas tran tdrise TRIG v(vin)  VAL='0.5*1.8' RISE=1 TARG v(vout) VAL='0.5*1.8' RISE=1
+meas tran tdfall TRIG v(vin)  VAL='0.5*1.8' FALL=1 TARG v(vout) VAL='0.5*1.8' FALL=1
+
+set wr_singlescale
+
+echo $&tr1090 $&tf9010 $&tdrise $&tdfall > /home/subhransu/gitRepo/gf180mcu_ocd_io-sdas/runs/RUN_2026-01-19_07-19-43/parameters/time_response/run_1/io_inv_1_time_1.data
+.endc
+
+
+**** end user architecture code
+**.ends
+.GLOBAL GND
+.end
