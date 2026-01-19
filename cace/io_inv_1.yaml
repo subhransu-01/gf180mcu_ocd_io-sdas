@@ -98,7 +98,7 @@ parameters:
         maximum: 130
       corner:
         minimum: ss
-        typical: tt
+        typical: typical
         maximum: ff
 
   transient_response:
@@ -138,6 +138,45 @@ parameters:
         typical: 27
         maximum: 130  
       corner:
-        #minimum: ss
-        typical: tt
-        #maximum: ff
+        minimum: ss
+        typical: typical
+        maximum: ff
+
+  time_response:
+    description: Time response
+    display: Time response
+    status: skip
+    unit: ns
+    tool:
+      ngspice:
+        template: io_inv_1_time.sch
+        format: ascii
+        suffix: .data
+        variables: [tr1090, tf9010, tdrise, tdfall]
+        jobs: 4
+    variables:
+      tr1090:
+        display: Time
+        unit: ns
+      tf9010:
+        display: Time
+        unit: ns
+      tdrise:
+        display: Time
+        unit: ns
+      tdfall:
+        display: Time
+        unit: ns    
+    conditions:
+      Tmax:
+        display: Simulation time
+        unit: ns
+        typical: 50
+      temperature:
+        minimum: -40
+        typical: 27
+        maximum: 130  
+      corner:
+        minimum: ss
+        typical: typical
+        maximum: ff

@@ -36,12 +36,13 @@ C {devices/code_shown.sym} 160 -80 0 0 {name=MODELS only_toplevel=true
 format="tcleval( @value )"
 value="
 .include $::180MCU_MODELS/design.ngspice
-.lib $::180MCU_MODELS/sm141064.ngspice typical
+.lib $::180MCU_MODELS/sm141064.ngspice ff
 "}
 C {simulator_commands_shown.sym} 190 80 0 0 {name=COMMANDS
 simulator=ngspice
 only_toplevel=false 
 value="
+.TEMP 27
 .PARAM PAR_VDD=1.8
 
 ** Rise/Fall 10-90%
@@ -52,15 +53,17 @@ value="
 .MEASURE TRAN tdrise TRIG v(vin)  VAL='0.5*PAR_VDD' RISE=1 TARG v(vout) VAL='0.5*PAR_VDD' RISE=1
 .MEASURE TRAN tdfall TRIG v(vin)  VAL='0.5*PAR_VDD' FALL=1 TARG v(vout) VAL='0.5*PAR_VDD' FALL=1
 .control
+
+
 	   save all
 
 op
 
     write inverter_tb.raw
     set appendwrite
-
+	
 	TRAN 0.1n 50n
-plot v(Vin) v(Vout)
+*plot v(Vin) v(Vout)
 .endc
 
 "}
