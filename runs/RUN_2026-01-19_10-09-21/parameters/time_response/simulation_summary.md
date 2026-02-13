@@ -1,0 +1,5 @@
+# Simulation Summary for Time response
+
+| run | tr1090 | tf9010 | tdrise | tdfall |
+| :-- | -----: | -----: | -----: | -----: |
+| run_0 | 1.506e-10 | 1.258e-10 | 1.146e-08 | -1.101e-08 |

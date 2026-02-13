@@ -1,0 +1,24 @@
+Error opening code model "../lib/ngspice/spice2poly.cm"
+: ../lib/ngspice/spice2poly.cm: cannot open shared object file: No such file or directory
+Error: Library ../lib/ngspice/spice2poly.cm couldn't be loaded!
+Error opening code model "../lib/ngspice/analog.cm"
+: ../lib/ngspice/analog.cm: cannot open shared object file: No such file or directory
+Error: Library ../lib/ngspice/analog.cm couldn't be loaded!
+Error opening code model "../lib/ngspice/digital.cm"
+: ../lib/ngspice/digital.cm: cannot open shared object file: No such file or directory
+Error: Library ../lib/ngspice/digital.cm couldn't be loaded!
+Error opening code model "../lib/ngspice/xtradev.cm"
+: ../lib/ngspice/xtradev.cm: cannot open shared object file: No such file or directory
+Error: Library ../lib/ngspice/xtradev.cm couldn't be loaded!
+Error opening code model "../lib/ngspice/xtraevt.cm"
+: ../lib/ngspice/xtraevt.cm: cannot open shared object file: No such file or directory
+Error: Library ../lib/ngspice/xtraevt.cm couldn't be loaded!
+Error opening code model "../lib/ngspice/table.cm"
+: ../lib/ngspice/table.cm: cannot open shared object file: No such file or directory
+Error: Library ../lib/ngspice/table.cm couldn't be loaded!
+Error on line 25 or its substitute:
+  meas tran tr1090 trig v(vout) val=    1.800000000000000e-01     rise=1 targ v(vout) val=    1.620000000000000e+00     rise=1
+could not find a valid modelname
+    Simulation interrupted due to error!
+
+Note: No ".plot", ".print", or ".fourier" lines; no simulations run

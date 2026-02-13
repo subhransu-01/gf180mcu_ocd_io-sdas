@@ -121,7 +121,7 @@ parameters:
     variables:
       time:
         display: Time
-        unit: ms
+        unit: ns
       Vin:
         display: Vin
         unit: V
